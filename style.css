@@ -69,3 +69,105 @@ a:hover {
 a:active {
   transform: translateY(0);
 }
+
+/* --- Top Navigation Bar --- */
+.navbar {
+  width: 100%;
+  background-color: #45171b; /* Deep burgundy navbar */
+  padding: 0.8rem 2rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 42px;
+  width: auto;
+  display: block;
+}
+
+/* Navigation Buttons Container */
+.nav-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+/* Buttons: Burgundy base with Beige border & text */
+.nav-button {
+  background-color: #45171b;
+  color: #d8d1c2;
+  border: 1.5px solid #d8d1c2;
+  padding: 0.45rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+/* Hover: Fill button with Beige, text switches to Burgundy */
+.nav-button:hover {
+  background-color: #d8d1c2;
+  color: #45171b;
+  border-color: #d8d1c2;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-button:active {
+  transform: translateY(0);
+}
+
+/* --- Page Content Container --- */
+.content-container {
+  width: 100%;
+  max-width: 900;
+  margin: 3rem 0 3rem 2.5rem; /* Pushes content closer to the left margin with a clean gap */
+  padding: 0 1rem;
+}
+
+.page-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #45171b;
+  line-height: 1.2;
+}
+
+/* --- Unordered Key List --- */
+.key-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.key-list li {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #45171b;
+}
+
+/* Styling for bullet point markers */
+.key-list li::marker {
+  color: #45171b;
+  font-size: 1.2rem;
+}
+
+/* Make key spans bold and clear */
+.key-list span {
+  font-weight: 700;
+}
