@@ -48,6 +48,27 @@ p {
   max-width: 480px;
 }
 
+/* --- Regular Text Links --- */
+.regular-links {
+  background-color: transparent; /* Removes button background */
+  border: none;                  /* Removes button border */
+  padding: 0;                    /* Removes button padding */
+  border-radius: 0;              /* Resets rounded corners */              
+  text-decoration: underline;    /* Makes it look like a standard link */
+  font-weight: 600;
+  display: inline;               /* Keeps it inline with the text */
+  box-shadow: none;              /* Removes button shadows */
+}
+
+/* Hover state for regular text links */
+.regular-links:hover {
+  background-color: transparent; /* Prevents button fill on hover */
+  color: #45171b;                /* Optional: changes to burgundy on hover */
+  text-decoration: underline;
+  transform: none;               /* Disables the button hover lift */
+  box-shadow: none;
+}
+
 /* Button style with inverted colors */
 a {
   display: inline-block;
@@ -170,4 +191,14 @@ a:active {
 /* Make key spans bold and clear */
 .key-list span {
   font-weight: 700;
+}
+
+ul {
+  padding-bottom: 100px;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-color: #45171b #d8d1c2;
+    scrollbar-width: auto;
 }
