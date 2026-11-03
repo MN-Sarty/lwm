@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My html code ☺</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo/lwm-logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts for crisp code & headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top navigation bar -->
+    <header class="navbar">
+        <!-- Logo smiley face image -->
+        <div class="nav-brand">
+            <img src="images/logo/lwm-beige-logo.png" alt="LWM logo" class="nav-logo">
+        </div>
+        <!-- Navigation buttons -->
+        <nav class="nav-buttons">
+            <a href="creativesources.html" class="nav-button">Creative Sources</a>
+            <a href="key.html" class="nav-button">Key</a>
+            <a href="csscode.html" class="nav-button">CSS</a>
+            <a href="extensions.html" class="nav-button">VS Code extensions</a>
+        </nav>
+    </header>
+
+    <!-- Page content -->
+    <main class="content-container">
+    <h1 class="page-title">HTML Boilerplate Skeleton</h1>
+
+    <!-- Card containing ONLY the code snippet -->
+    <div class="snippet-card">
+        <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <!-- Notes section sitting outside the card underneath -->
+    <section class="code-notes-section">
+        <h2 class="notes-heading" style="padding-bottom: 10px;">Breakdown & Notes</h2>
+        <ul class="notes-list">
+            <li><code style="color: #2d4a3e;">&lt;!DOCTYPE html&gt;</code> tells the browser that this is an HTML5 document.</li>
+            <li><code style="color: #2d4a3e;">&lt;html lang="en"&gt;</code> is the root element that wraps everything and sets the primary language to English.</li>
+            <li><code style="color: #2d4a3e;">&lt;head&gt;</code> acts as a container for metadata, links, and the page title (hidden from the actual visible page).</li>
+            <li><code style="color: #2d4a3e;">&lt;meta charset="UTF-8"&gt;</code> sets the character encoding so text and symbols render correctly.</li>
+            <li><code style="color: #2d4a3e;">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code> ensures your layout scales properly and looks good on mobile screens, but you may need to adjust it for specific designs.</li>
+            <li><code style="color: #2d4a3e;">&lt;title&gt;</code> sets the text shown in the browser tab.</li>
+            <li><code style="color: #2d4a3e;">&lt;body&gt;</code> contains all the actual visible content of your webpage.</li>
+            <li>Remember to close all your tags properly to avoid rendering issues.</li>
+        </ul>
+    </section>
+
+    <h1 class="page-title">Adding more detail to your head tag</h1>
+    <div class="snippet-card">
+        <pre class="code-block"><code>&lt;head&gt;
+    &lt;link rel="icon" href="images/head.ico" type="image/x-icon"&gt;
+    &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+    &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+    &lt;link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet"&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;</code></pre>
+    </div>
+
+    <!-- Notes section sitting outside the card underneath -->
+    <section class="code-notes-section">
+        <h2 class="notes-heading">Breakdown & Notes</h2>
+    
+        <div style="margin-bottom: 1.2rem;">
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.4rem; color: #45171b;">1. The Core Element: <code style="color: #2d4a3e;">&lt;link&gt;</code></h3>
+            <p style="font-size: 1.1rem; line-height: 1.5;">Defines a relationship between the current document and an external resource. It is always placed inside the <code style="color: #2d4a3e;">&lt;head&gt;</code> section.</p>
+        </div>
+
+        <div style="margin-bottom: 1.2rem;">
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.4rem; color: #45171b;">2. Key Descriptors (Attributes)</h3>
+            <ul class="notes-list">
+                <li><code style="color: #2d4a3e;">rel</code> (Relationship): Specifies how the current page relates to the linked resource (e.g., <code style="color: #2d4a3e;">stylesheet</code>, <code style="color: #2d4a3e;">icon</code>, <code style="color: #2d4a3e;">preconnect</code>).</li>
+                <li><code style="color: #2d4a3e;">href</code> (Hypertext Reference): Specifies the URL or file path of the external resource.</li>
+                <li><code style="color: #2d4a3e;">type</code>: Specifies the media type or MIME type of the linked document (e.g., <code style="color: #2d4a3e;">image/x-icon</code>).</li>
+                <li><code style="color: #2d4a3e;">crossorigin</code>: Instructs the browser to fetch the resource with CORS enabled, improving performance when loading external fonts.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.4rem; color: #45171b;">3. Line-by-Line Breakdown</h3>
+            <ul class="notes-list">
+                <li><code style="color: #2d4a3e;">&lt;link rel="icon" ...&gt;</code> sets the small icon that appears in the browser tab.</li>
+                <li><code style="color: #2d4a3e;">&lt;link rel="preconnect" ...&gt;</code> tells the browser to set up an early connection to Google Fonts before files are requested, speeding up page load times.</li>
+                <li><code style="color: #2d4a3e;">&lt;link rel="stylesheet" ...&gt;</code> links your main custom CSS file to style the webpage.</li>
+            </ul>
+        </div>
+    </section>
+
+    <h1 class="page-title">Adding content to your body tag</h1>
+    <div class="snippet-card">
+        <pre class="code-block"><code>&lt;body&gt;
+        &lt;h1 title="That's my name!"&gt;Hi! I'm Sarty!&lt;/h1&gt;
+
+        &lt;img src="images/profile_pic.jfif" alt="Profile Picture" width="200" height="250" style="display: block; margin-left: auto; margin-right: auto; border: 4px solid #342519;" title="That's an avater representation of me!"&gt;
+        
+        &lt;p title="I'm still a student..."&gt;Bachelor of Computer Science | NUST | 2026 - Present | Windhoek, Namibia&lt;/p&gt;
+        &lt;div class="button-container"&gt;
+            &lt;a href="home.html" class="button" target="_self"&gt;More of my portfolio&lt;/a&gt;
+            &lt;a href="documents/CV.pdf" class="button" target="_blank"&gt;Look at my CV&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;p style="font-size: 18px;" title="Please contact me..."&gt;Like what you see so far?&lt;/p&gt;
+        
+        &lt;address style="font-size: 18px;" title="That's my email address!"&gt;
+            Email me at &lt;a href="mailto:sartyndafy@gmail.com" style="color: #342519;"&gt;sartyndafy@gmail.com&lt;/a&gt;
+        &lt;/address>
+    &lt;/body&gt;</code></pre>
+    </div>
+
+    <section class="code-notes-section">
+        <h2 class="notes-heading">Breakdown & Notes</h2>
+    
+        <div style="margin-bottom: 1.2rem;">
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.4rem; color: #45171b;">1. The Core Element: <code style="color: #2d4a3e;">&lt;body&gt;</code></h3>
+            <p style="font-size: 1.1rem; line-height: 1.5;">Contains all the visible content of an HTML document, such as headings, paragraphs, images, hyperlinks, and tables.</p>
+        </div>
+
+        <div style="margin-bottom: 1.2rem;">
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.4rem; color: #45171b;">2. Key Tags Used Here</h3>
+            <ul class="notes-list">
+                <li><code style="color: #2d4a3e;">&lt;h1&gt;</code>: Defines the most important heading on the page.</li>
+                <li><code style="color: #2d4a3e;">&lt;img&gt;</code>: Embeds an image into the page (an empty element with no closing tag).</li>
+                <li><code style="color: #2d4a3e;">&lt;p&gt;</code>: Defines a standard text paragraph.</li>
+                <li><code style="color: #2d4a3e;">&lt;address&gt;</code>: Indicates that the enclosed HTML provides contact information for a person or organization.</li>
+            </ul>
+        </div>
+
+        <div style="margin-bottom: 1.2rem;">
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.4rem; color: #45171b;">3. Key Descriptors (Attributes)</h3>
+            <ul class="notes-list">
+                <li><code style="color: #2d4a3e;">title</code>: Adds a tooltip text description that appears when a user hovers over the element.</li>
+                <li><code style="color: #2d4a3e;">src</code>: Specifies the file path or URL for an image.</li>
+                <li><code style="color: #2d4a3e;">alt</code>: Provides alternative text for an image if it fails to load or for screen readers.</li>
+                <li><code style="color: #2d4a3e;">target</code>: Specifies where to open a linked document (e.g., <code style="color: #2d4a3e;">_blank</code> opens it in a new tab).</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.4rem; color: #45171b;">4. Line-by-Line Breakdown</h3>
+            <ul class="notes-list">
+                <li><code style="color: #2d4a3e;">&lt;img ... style="display: block; margin-left: auto; margin-right: auto;"&gt;</code> centers the image horizontally on the page using inline CSS.</li>
+                <li><code style="color: #2d4a3e;">&lt;a href="mailto:..."&gt;</code> creates an active email link that automatically opens the user's default email client when clicked.</li>
+            </ul>
+        </div>
+    </section>
+    </main>
+</body>
+</html>

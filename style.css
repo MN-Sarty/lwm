@@ -202,3 +202,24 @@ html {
     scrollbar-color: #45171b #d8d1c2;
     scrollbar-width: auto;
 }
+
+/* --- Code Card with Only a Burgundy Border --- */
+.snippet-card {
+  background-color: transparent; /* No card background color */
+  border: 2px solid #45171b;     /* Burgundy border */
+  border-radius: 12px;           /* Rounded corners */
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: none;              /* Removes any shadow */
+}
+
+/* Code Block inside the card */
+.code-block {
+  background-color: transparent; /* Keep code background clean */
+  color: #45171b;                /* Burgundy text for code */
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95rem;
+  overflow-x: auto;
+  border: none;                  /* No inner border needed */
+  padding: 0;
+}
