@@ -78,23 +78,13 @@
         <h2 class="notes-heading">Breakdown & Notes</h2>
     
         <div style="margin-bottom: 1.2rem;">
-            <h3 style="font-size: 1.2rem; margin-bottom: 0.4rem; color: #45171b;">1. The Core Element: <code style="color: #2d4a3e;">&lt;link&gt;</code></h3>
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.4rem; color: #45171b;">The Core Element: <code style="color: #2d4a3e;">&lt;link&gt;</code></h3>
             <p style="font-size: 1.1rem; line-height: 1.5;">Defines a relationship between the current document and an external resource. It is always placed inside the <code style="color: #2d4a3e;">&lt;head&gt;</code> section.</p>
-        </div>
-
-        <div style="margin-bottom: 1.2rem;">
-            <h3 style="font-size: 1.2rem; margin-bottom: 0.4rem; color: #45171b;">2. Key Descriptors (Attributes)</h3>
             <ul class="notes-list">
                 <li><code style="color: #2d4a3e;">rel</code> (Relationship): Specifies how the current page relates to the linked resource (e.g., <code style="color: #2d4a3e;">stylesheet</code>, <code style="color: #2d4a3e;">icon</code>, <code style="color: #2d4a3e;">preconnect</code>).</li>
                 <li><code style="color: #2d4a3e;">href</code> (Hypertext Reference): Specifies the URL or file path of the external resource.</li>
                 <li><code style="color: #2d4a3e;">type</code>: Specifies the media type or MIME type of the linked document (e.g., <code style="color: #2d4a3e;">image/x-icon</code>).</li>
                 <li><code style="color: #2d4a3e;">crossorigin</code>: Instructs the browser to fetch the resource with CORS enabled, improving performance when loading external fonts.</li>
-            </ul>
-        </div>
-
-        <div>
-            <h3 style="font-size: 1.2rem; margin-bottom: 0.4rem; color: #45171b;">3. Line-by-Line Breakdown</h3>
-            <ul class="notes-list">
                 <li><code style="color: #2d4a3e;">&lt;link rel="icon" ...&gt;</code> sets the small icon that appears in the browser tab.</li>
                 <li><code style="color: #2d4a3e;">&lt;link rel="preconnect" ...&gt;</code> tells the browser to set up an early connection to Google Fonts before files are requested, speeding up page load times.</li>
                 <li><code style="color: #2d4a3e;">&lt;link rel="stylesheet" ...&gt;</code> links your main custom CSS file to style the webpage.</li>
@@ -126,38 +116,29 @@
         <h2 class="notes-heading">Breakdown & Notes</h2>
     
         <div style="margin-bottom: 1.2rem;">
-            <h3 style="font-size: 1.2rem; margin-bottom: 0.4rem; color: #45171b;">1. The Core Element: <code style="color: #2d4a3e;">&lt;body&gt;</code></h3>
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.4rem; color: #45171b;">The Core Element: <code style="color: #2d4a3e;">&lt;body&gt;</code></h3>
             <p style="font-size: 1.1rem; line-height: 1.5;">Contains all the visible content of an HTML document, such as headings, paragraphs, images, hyperlinks, and tables.</p>
-        </div>
-
-        <div style="margin-bottom: 1.2rem;">
-            <h3 style="font-size: 1.2rem; margin-bottom: 0.4rem; color: #45171b;">2. Key Tags Used Here</h3>
             <ul class="notes-list">
                 <li><code style="color: #2d4a3e;">&lt;h1&gt;</code>: Defines the most important heading on the page.</li>
                 <li><code style="color: #2d4a3e;">&lt;img&gt;</code>: Embeds an image into the page (an empty element with no closing tag).</li>
                 <li><code style="color: #2d4a3e;">&lt;p&gt;</code>: Defines a standard text paragraph.</li>
                 <li><code style="color: #2d4a3e;">&lt;address&gt;</code>: Indicates that the enclosed HTML provides contact information for a person or organization.</li>
-            </ul>
-        </div>
-
-        <div style="margin-bottom: 1.2rem;">
-            <h3 style="font-size: 1.2rem; margin-bottom: 0.4rem; color: #45171b;">3. Key Descriptors (Attributes)</h3>
-            <ul class="notes-list">
                 <li><code style="color: #2d4a3e;">title</code>: Adds a tooltip text description that appears when a user hovers over the element.</li>
                 <li><code style="color: #2d4a3e;">src</code>: Specifies the file path or URL for an image.</li>
                 <li><code style="color: #2d4a3e;">alt</code>: Provides alternative text for an image if it fails to load or for screen readers.</li>
-                <li><code style="color: #2d4a3e;">target</code>: Specifies where to open a linked document (e.g., <code style="color: #2d4a3e;">_blank</code> opens it in a new tab).</li>
-            </ul>
-        </div>
-
-        <div>
-            <h3 style="font-size: 1.2rem; margin-bottom: 0.4rem; color: #45171b;">4. Line-by-Line Breakdown</h3>
-            <ul class="notes-list">
+                <li><code style="color: #2d4a3e;">target</code>: Specifies where to open a linked document (e.g., <code style="color: #2d4a3e;">_blank</code> opens it in a new tab).
                 <li><code style="color: #2d4a3e;">&lt;img ... style="display: block; margin-left: auto; margin-right: auto;"&gt;</code> centers the image horizontally on the page using inline CSS.</li>
                 <li><code style="color: #2d4a3e;">&lt;a href="mailto:..."&gt;</code> creates an active email link that automatically opens the user's default email client when clicked.</li>
+                <li><code style="color: #2d4a3e;">&lt;div&gt;</code>: A generic, block-level container used to group visible elements together (like buttons) for easier layout and styling without adding any visual effect of its own.</li>
+                <li><code style="color: #2d4a3e;">class</code>: An attribute used to assign a name to an element, acting as a hook for CSS stylesheets to target and style groups of items consistently.</li>
+                <li><code style="color: #2d4a3e;">title</code>: An attribute that provides extra information, displayed by the browser as an interactive tooltip when the user hovers over the element in the body. You can see title of the text when you hover over it.</li>
+                <li><code style="color: #2d4a3e;">style</code>: An attribute used to apply CSS rules directly (inline) to a specific element on the page, such as adding borders or adjusting margins on the fly.</li>
             </ul>
         </div>
     </section>
+    <address style="font-size: 18px;" title="That's my email address!">
+            Email me at <a href="mailto:sartyndafy@gmail.com" style="color: #45171b;" class="regular-links">sartyndafy@gmail.com</a> if you experience any issues.
+           </address>
     </main>
 </body>
 </html>
