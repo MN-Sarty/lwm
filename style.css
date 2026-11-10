@@ -5,9 +5,11 @@
   box-sizing: border-box;
 }
 
+/* Default body setup for index.html (keeps it centered) */
 body {
-  background-color: #d8d1c2; /* Soft beige background */
-  color: #45171b;            /* Deep maroon text */
+  background-color: #d8d1c2;
+  color: #45171b;
+  font-family: "Quicksand", sans-serif;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -15,7 +17,7 @@ body {
   padding: 1.5rem;
 }
 
-/* Hero container layout */
+/* Hero container layout for index.html */
 .hero-container {
   max-width: 600px;
   width: 100%;
@@ -30,68 +32,48 @@ body {
 }
 
 .main-heading {
-    font-family: "Quicksand", sans-serif;
-    font-size: 80px;
-    font-weight: 800;
-    line-height: 1.1;
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 1.1;
 }
 
 .sub-heading {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 40px;
-    font-weight: 600;
+  font-size: 40px;
+  font-weight: 600;
 }
 
-p {
+.hero-content p {
   font-size: 1.125rem;
   line-height: 1.6;
   max-width: 480px;
+  text-align: center;
 }
 
-/* --- Regular Text Links --- */
-.regular-links {
-  background-color: transparent; /* Removes button background */
-  border: none;                  /* Removes button border */
-  padding: 0;                    /* Removes button padding */
-  border-radius: 0;              /* Resets rounded corners */              
-  text-decoration: underline;    /* Makes it look like a standard link */
-  font-weight: 600;
-  display: inline;               /* Keeps it inline with the text */
-  box-shadow: none;              /* Removes button shadows */
-}
-
-/* Hover state for regular text links */
-.regular-links:hover {
-  background-color: transparent; /* Prevents button fill on hover */
-  color: #45171b;                /* Optional: changes to burgundy on hover */
-  text-decoration: underline;
-  transform: none;               /* Disables the button hover lift */
-  box-shadow: none;
-}
-
-/* Button style with inverted colors */
-a {
+/* Primary Button Styling for index.html */
+.hero-content a {
   display: inline-block;
   margin-top: 0.5rem;
   padding: 0.75rem 2rem;
-  background-color: #45171b; /* Dark maroon fill */
-  color: #d8d1c2;            /* Light text */
+  background-color: #45171b;
+  color: #d8d1c2;
   text-decoration: none;
   font-weight: 600;
   border-radius: 8px;
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-a:hover {
+.hero-content a:hover {
   opacity: 0.9;
   transform: translateY(-2px);
 }
 
-a:active {
+.hero-content a:active {
   transform: translateY(0);
 }
 
-/* --- Top Navigation Bar --- */
+/* ==========================================
+   TOP NAVIGATION BAR (HOME.HTML)
+   ========================================== */
 .navbar {
   width: 100%;
   background-color: #45171b; /* Deep burgundy navbar */
@@ -136,6 +118,48 @@ a:active {
   font-size: 0.95rem;
   transition: all 0.25s ease-in-out;
   cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: #d8d1c2;
+  color: #45171b;
+}
+
+/* ==========================================
+   PAGE CONTENT & LAYOUT FIX FOR HOME.HTML
+   ========================================== */
+.page-content {
+  /* Clears the fixed navbar top-space cleanly */
+  padding-top: 90px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 100%;
+  max-width: 100%; /* Allows full width expansion */
+  text-align: left;
+}
+
+.page-content h1 {
+  margin-top: 0; /* Prevents top white gap above header */
+}
+
+/* Inline text link overrides */
+.regular-links {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  text-decoration: underline;
+  font-weight: 600;
+  display: inline;
+  box-shadow: none;
+}
+
+.regular-links:hover {
+  background-color: transparent;
+  color: #45171b;
+  text-decoration: underline;
+  transform: none;
+  box-shadow: none;
 }
 
 /* Hover: Fill button with Beige, text switches to Burgundy */
@@ -222,4 +246,73 @@ html {
   overflow-x: auto;
   border: none;                  /* No inner border needed */
   padding: 0;
+}
+
+/* --- Top Right Search Component --- */
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto; /* Pushes search to the far right inside flex containers */
+}
+
+.search-toggle-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* Search Bar Input */
+.search-bar {
+  background-color: #d8d1c2; /* Warm beige background */
+  color: #45171b;            /* Red typed text */
+  border: 1.5px solid #45171b;/* Burgundy border */
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  font-family: inherit;
+  font-size: 0.95rem;
+  outline: none;
+  transition: opacity 0.2s ease;
+}
+
+.search-bar::placeholder {
+  color: rgba(69, 23, 27, 0.6); /* Slightly faded burgundy placeholder */
+}
+
+/* Utility class to show/hide the input */
+.search-bar.hidden {
+  display: none;
+}
+
+/* --- Home Page Specific Layout (home.html) --- */
+body.home-body {
+  background-color: #d8d1c2;
+  color: #45171b;
+  font-family: "Quicksand", sans-serif;
+  min-height: 100vh;
+  display: block; /* Overrides the center flexbox from index.html */
+  padding: 0;     /* Removes the outer padding causing the left/top gap */
+}
+
+.page-content {
+  padding-top: 85px;  /* Clears space cleanly below your fixed navbar */
+  padding-left: 2rem; /* Comfortable left breathing room */
+  padding-right: 2rem;
+  width: 100%;
+  max-width: 100%;
+  text-align: left;
+}
+
+.page-content h1 {
+  margin-top: 0;      /* Pulls the main title right up */
 }

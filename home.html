@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Home Page ☺</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo/lwm-logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts for crisp code & headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body class="home-body">
+    <!-- Top navigation bar -->
+    <header class="navbar">
+        <!-- Logo smiley face image -->
+        <div class="nav-brand">
+            <img src="images/logo/lwm-beige-logo.png" alt="LWM logo" class="nav-logo">
+        </div>
+        <!-- Navigation buttons -->
+        <nav class="nav-buttons">
+            <a href="portfolio.html" class="nav-button">My Portfolio</a>
+            <a href="task-manager.html" class="nav-button">Task Manager</a>
+        </nav>
+        <!-- Search Container (Place inside your top nav) -->
+        <div class="search-container">
+            <button id="search-btn" class="search-toggle-btn" aria-label="Search page">
+                <img src="images/search/search-beige.png" alt="Search Icon" class="search-icon">
+            </button>
+            <input type="text" id="search-input" class="search-bar hidden" placeholder="Search page...">
+        </div>
+    </header>
+
+    <!-- Page content -->
+    <div class="page-content" id="pageContent">
+    <h1 title="Welcome to the code dictionary!">Learn With Me</h1>
+    <p title="What is this place?" style="max-width: fit-content;">Welcome to my digital workshop! Select any project below to dive into the exact HTML, CSS, JavaScript, and logic I used to build it.</p>
+
+    <h2 title="Click a card to explore the code!" style="padding-top: 20px;">Project Breakdowns</h2>
+    
+    <div class="skills-container">
+        <!-- Project 1: The Portfolio Itself -->
+        <div class="skill-card" onclick="location.href='portfolio.html'" style="cursor: pointer; padding-top: 10px;" title="Click me ☺">
+            <h3>01. <span style="text-decoration: underline;">My Portfolio</span></h3>
+            <h4>HTML5 • CSS3 • JavaScript</h4>
+            <p style="max-width: fit-content;">Learn to create your own portfolio using elements from mine. It can be a portfolio on any aspect of your life, but try not to copy mine exactly.</p>
+        </div>
+
+        <!--2: Task Manager-->
+        <div class="skill-card" onclick="location.href='task-manager.html'" style="cursor: pointer; padding-top: 10px;" title="Click me ☺">
+            <h3>02. <span style="text-decoration: underline;">Task Manager</span></h3>
+            <h4>HTML5 • CSS3 • JavaScript • Supabase</h4>
+            <p style="max-width: fit-content;">How I created my task manager with a login feature and auto deletion of tasks after 24 hours of completion.</p>
+        </div>
+
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

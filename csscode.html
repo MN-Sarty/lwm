@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My css code ☺</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo/lwm-logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts for crisp code & headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top navigation bar -->
+    <header class="navbar">
+        <!-- Logo smiley face image -->
+        <div class="nav-brand">
+            <img src="images/logo/lwm-beige-logo.png" alt="LWM logo" class="nav-logo">
+        </div>
+        <!-- Navigation buttons -->
+        <nav class="nav-buttons">
+            <a href="extensions.html" class="nav-button">VS Code extensions</a>
+            <a href="creativesources.html" class="nav-button">Creative Sources</a>
+            <a href="jscode.html" class="nav-button">JavaScript</a>
+            <a href="htmlcode.html" class="nav-button">HTML</a>
+            <a href="key.html" class="nav-button">Key</a>
+        </nav>
+        <!-- Search Container (Place inside your top nav) -->
+        <div class="search-container">
+            <button id="search-btn" class="search-toggle-btn" aria-label="Search page">
+                <img src="images/search/search-beige.png" alt="Search Icon" class="search-icon">
+            </button>
+            <input type="text" id="search-input" class="search-bar hidden" placeholder="Search page...">
+        </div>
+    </header>
+
+    <!-- Page content -->
+    <main class="content-container">
+    <h1 class="page-title">Media tags</h1>
+
+    <!-- Card containing ONLY the code snippet -->
+    <div class="snippet-card">
+    <pre class="code-block"><code>@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}</code></pre>
+    </div>
+
+    <section class="code-notes-section">
+        <h2 class="notes-heading">Breakdown & Notes</h2>
+            <ul class="notes-list">
+                <li><code style="color: #5c2c49;">@media</code>: An at-rule in CSS used to create responsive designs by applying a block of styles only when specific conditions—such as screen width or device orientation—are met. You don't typically need to add a media tag to your code if your web app will just be viewed on the device you built it on.</li>
+                <li><code style="color: #5c2c49;">(max-width: 600px)</code>: The media feature condition that triggers the CSS styles inside the brackets only when the browser window or viewport width is 600 pixels or narrower.</li>
+                <li><code style="color: #5c2c49;">max-width: 480px</code>: Small mobile screens (portrait orientation).</li>
+                <li><code style="color: #5c2c49;">max-width: 768px</code>: Tablets and larger mobile screens.</li>
+                <li><code style="color: #5c2c49;">max-width: 1024px</code>: Laptops, small desktop displays, and tablets in landscape.</li>
+                <li><code style="color: #5c2c49;">min-width: 1200px</code>: Large desktop monitors.</li>
+            </ul>
+    </section>
+
+    <h1 class="page-title">CSS tags</h1>
+    <p style="max-width: fit-content; padding-bottom: 20px;"><strong>How HTML Connects to CSS:</strong> HTML provides the structure (you write tags like <code style="color: #5c2c49;">&lt;h1&gt;</code>, <code style="color: #5c2c49;">&lt;p&gt;</code>, or <code style="color: #5c2c49;">&lt;hr&gt;</code> to put content on the page). CSS provides the style. By writing the exact same name in your CSS file (like <code style="color: #5c2c49;">h1 { ... }</code>), you create a direct target match—telling the browser to find every single <code style="color: #5c2c49;">&lt;h1&gt;</code> element on the page and apply those rules to it!</p>
+
+    <div class="snippet-card">
+        <pre class="code-block"><code>h1 {
+    font-size: 30px;
+    padding-left: 10px;
+    font-family: 'Sniglet';
+}
+p {
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+hr {
+    margin: 20px 20px;
+}</code></pre>
+    </div>
+    <section class="code-notes-section">
+        <h2 class="notes-heading">Breakdown & Notes</h2>
+        <ul class="notes-list">
+            <li><code style="color: #5c2c49;">&lt;h1&gt;</code>: Defines the highest-level and most important heading on a page, typically used for main titles.</li>
+            <li><code style="color: #5c2c49;">&lt;p&gt;</code>: Defines a standard block of text as a paragraph, adding automatic margins above and below it.</li>
+            <li><code style="color: #5c2c49;">&lt;hr&gt;</code>: Represents a thematic break or horizontal separator line between sections of content (an empty element with no closing tag).</li>
+            <li><code style="color: #5c2c49;">font-size</code>: Sets the size of the text (e.g., <code>30px</code> or <code>16px</code>).</li>
+            <li><code style="color: #5c2c49;">font-family</code>: Specifies the typeface to be used for the text (e.g., <code>'Sniglet'</code>).</li>
+            <li><code style="color: #5c2c49;">padding-left</code> / <code style="color: #5c2c49;">padding-right</code>: Sets the inner spacing inside an element on its left or right side, pushing the content inward from the border.</li>
+            <li><code style="color: #5c2c49;">margin</code>: Sets the outer spacing around an element; when two values are given (e.g., <code>20px 20px</code>), the first value applies to the top/bottom and the second applies to the left/right.</li>
+        </ul>
+    </section>
+
+    <h1 class="page-title">CSS comments</h1>
+    <p style="max-width: fit-content; padding-bottom: 20px;">CSS comments are used to add notes or explanations within the code. They are ignored by the browser and do not affect the styling of the webpage. Comments are enclosed within <code style="color: #5c2c49;">/*</code> and <code style="color: #5c2c49;">*/</code>.</p>
+
+    <div class="snippet-card">
+        <pre class="code-block"><code style="opacity: 60%;">/* This is a comment in CSS */</code></pre>
+    </div>
+
+    <section class="code-notes-section">
+        <h2 class="notes-heading">Breakdown & Notes</h2>
+        <ul class="notes-list">
+            <li><code style="color: #5c2c49;">/* ... */</code>: CSS comments are enclosed within <code>/*</code> and <code>*/</code>. They are used to add notes or explanations in the code, which are ignored by the browser during rendering.</li>
+        </ul>
+    </section>
+    
+    <h1 class="page-title">CSS Tags</h1>
+    <p style="max-width:fit-content; padding-bottom: 20px;"><strong>How Class Tags Work:</strong> Unlike tag selectors (which target every single element like all <code style="color: #5c2c49;">&lt;p&gt;</code> tags), a class selector uses a dot prefix (like <code style="color: #5c2c49;">.sidebar</code>) to target specific, custom-labeled elements in your HTML (e.g., <code style="color: #5c2c49;">class="sidebar"</code>). This allows you to style individual elements differently even if they share the same HTML tag.</p>
+
+    <div class="snippet-card">
+        <pre class="code-block"><code>/* Sidebar and layout shift rules */
+.sidebar {
+    width: 200px;
+    padding: 90px 20px 20px;
+}
+.page-content p {
+    padding: 20px;
+    padding-top: 10px;
+}
+.page-content h1 {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.page-content.shifted {
+    transform: none; /* No shift for small screens */
+}</code></pre>
+    </div>
+
+    <section class="code-notes-section">
+        <h2 class="notes-heading">Breakdown & Notes</h2>
+            <ul class="notes-list">
+                <li><code style="color: #5c2c49;">width</code>: Sets the horizontal width of an element (e.g., <code>200px</code> for the fixed sidebar).</li>
+                <li><code style="color: #5c2c49;">transform: none</code>: Disables any active visual transforms or movement, resetting the element back to its default position.</li>
+                <li><code style="color: #5c2c49;">.page-content p</code>: A descendant selector that targets only paragraphs (`&lt;p&gt;`) that are located *inside* an element with the class `page-content`.</li>
+                <li><code style="color: #5c2c49;">.page-content.shifted</code>: Targets an element that has *both* classes applied simultaneously (no space between them).</li>
+            </ul>
+    </section>
+
+    <div class="snippet-card">
+    <pre class="code-block"><code>.menu-button {
+    top: 10px;
+    left: 0px;
+    width: 35px;
+    height: 35px;
+}</code></pre>
+    </div>
+
+    <section class="code-notes-section">
+        <h2 class="notes-heading">Breakdown & Notes</h2>
+        <ul class="notes-list">
+            <li><code style="color: #5c2c49;">top</code> / <code style="color: #5c2c49;">left</code>: Position offsets that control how far an element is pushed down from the top or away from the left. Note: These properties only take effect when the element's position is set to <code style="color: #5c2c49;">absolute</code>, <code style="color: #5c2c49;">relative</code>, or <code style="color: #5c2c49;">fixed</code>.</li>
+            <li><code style="color: #5c2c49;">width</code> / <code style="color: #5c2c49;">height</code>: Sets the explicit horizontal and vertical dimensions of the element (making it a compact 35x35 pixel interactive square, perfect for an icon button).</li>
+        </ul>
+    </section>
+
+    <div class="snippet-card">
+    <pre class="code-block"><code>.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0; /* Hide the sidebar initially */
+    width: 250px;
+    height: 100%;
+    background-color: #342519;
+    color: #ede6d9;
+    padding: 90px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000; /* Ensure the sidebar is above other elements */
+    transform: translateX(-100%); /* Hide the sidebar initially */
+    transition: transform 0.35s ease; /* Smooth transition for sliding effect */
+}
+.sidebar.open {
+    transform: translateX(0); /* Slide the sidebar into view */
+}
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sidebar nav a {
+    color: #ede6d9;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.2s ease;
+}
+.sidebar-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    border: 2px solid #ede6d9;
+    cursor: pointer;
+    z-index: 1001; /* Ensure the button is above other elements */
+}
+.sidebar nav a:hover {
+    transform: translateX(5px);
+}
+.menu-button.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}</code></pre>
+    </div>
+
+    <section class="code-notes-section">
+        <h2 class="notes-heading">Breakdown & Notes</h2>
+        <ul class="notes-list">
+            <li><code style="color: #5c2c49;">position: fixed</code>: Pulls an element out of the normal page flow and locks it to a specific spot relative to the browser window, so it stays in place when scrolling.</li>
+            <li><code style="color: #5c2c49;">z-index</code>: Controls the stacking order of overlapping elements. A higher number (like <code>1000</code> or <code>1001</code>) ensures elements like navigation bars and buttons sit visibly *on top* of standard page content rather than sliding underneath it.</li>
+            <li><code style="color: #5c2c49;">transform: translateX()</code>: Moves an element horizontally across the screen without affecting surrounding layout flows. Using <code>-100%</code> pushes the sidebar completely off-screen to the left, while <code>0</code> returns it to its natural position.</li>
+            <li><code style="color: #5c2c49;">transition</code>: Specifies how long a property change should take when animating (e.g., <code>0.35s ease</code> creates a smooth sliding effect instead of an instant snap).</li>
+            <li><code style="color: #5c2c49;">display: flex</code> with <code style="color: #5c2c49;">flex-direction: column</code>: Turns an element into a flexible container that stacks its children vertically in a column layout.</li>
+            <li><code style="color: #5c2c49;">gap</code>: Sets the exact spacing distance between flexbox or grid items without needing individual margins on every child element.</li>
+            <li><code style="color: #5c2c49;">:hover</code>: A pseudo-class that applies styles only when the user's mouse cursor is resting over the element (such as shifting a link slightly to the right).</li>
+            <li><code style="color: #5c2c49;">:nth-child()</code>: A structural pseudo-class that targets a specific child element based on its numerical order inside its parent container.</li>
+        </ul>
+    </section>
+
+    <div class="snippet-card">
+        <pre class="code-block"><code>.menu-button.open span:nth-child(2) {
+    opacity: 0;
+}
+.menu-button.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+.page-content {
+    transition: transform 0.35s ease;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.page-content.shifted {
+    transform: translateX(250px); /* Shift the content to the right when the sidebar is open */
+}</code></pre>
+    </div>
+
+    <section class="code-notes-section">
+        <h2 class="notes-heading">Breakdown & Notes</h2>
+        <ul class="notes-list">
+            <li><code style="color: #5c2c49;">opacity</code>: Controls the transparency of an element. Setting it to <code>0</code> makes the element completely invisible (used here to fade out the middle line of the hamburger menu icon when it transforms into an "X").</li>
+            <li><code style="color: #5c2c49;">max-width</code>: Sets an upper limit on how wide an element can expand, ensuring your content lines don't stretch too wide on large desktop monitors.</li>
+            <li><code style="color: #5c2c49;">margin: 0 auto</code>: A classic centering technique where top/bottom margins are set to <code>0</code> and left/right margins are set to <code>auto</code>, automatically centering a block container horizontally on the page.</li>
+            <li><code style="color: #5c2c49;">transform: translateX(250px)</code>: Moves an element 250 pixels to the right along the horizontal X-axis. This matches your sidebar's width so the main page content slides over neatly when the sidebar opens.</li>
+        </ul>
+    </section>
+
+    <address style="font-size: 18px;" title="That's my email address!">Email me at <a href="mailto:sartyndafy@gmail.com" style="color: #45171b;" class="regular-links">sartyndafy@gmail.com</a> if you experience any issues.</address>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
