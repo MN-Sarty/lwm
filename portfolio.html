@@ -21,11 +21,10 @@
         </div>
         <!-- Navigation buttons -->
         <nav class="nav-buttons">
-            <a href="extensions.html" class="nav-button">VS Code extensions</a>
-            <a href="jscode.html" class="nav-button">JavaScript</a>
-            <a href="htmlcode.html" class="nav-button">HTML</a>
-            <a href="csscode.html" class="nav-button">CSS</a>
-            <a href="key.html" class="nav-button">Key</a>   
+            <a href="home.html" class="nav-button">Home</a> 
+            <a href="task-manager.html" class="nav-button">Task Manager</a>
+            <a href="lwm.html" class="nav-button">Learn With Me </a>
+            <a href="sh.html" class="nav-button">Sarty's House</a>
         </nav>
         <!-- Search Container (Place inside your top nav) -->
         <div class="search-container">
@@ -38,17 +37,716 @@
 
     <!-- Page content -->
     <main class="content-container">
-        <h1 class="page-title">These are all the sources I use for colours, fonts, icons, etc.</h1>
-        <p style="max-width: fit-content; padding-bottom: 20px;">These are all free sources. However, if they are no longer free, and I haven't updated this page, please do send me an email.</p>
-        <ul class="key-list">
-            <li>For colours that I use on my site, I have a <a href="https://pin.it/7lTkjbDTV" class="regular-links" style="color: #1b365f;" target="_blank">Pinterest Board</a>.</li>
-            <li>For the fonts I use on my site, I scroll through <a href="https://fonts.google.com/" class="regular-links" style="color: #1b365f;" target="_blank">Google Fonts</a>.</li>
-            <li>For the icons I use, I search <a href="https://icons8.com/icons" class="regular-links" style="color: #1b365f;" target="_blank">Icons8</a>.</li>
-            <li>For all the colours I use, I use the hexadecimal system.</li>
-        </ul>
-           <address style="font-size: 18px;" title="That's my email address!">
-            Email me at <a href="mailto:sartyndafy@gmail.com" style="color: #45171b;" class="regular-links">sartyndafy@gmail.com</a> if you experience any issues.
-           </address>
+        <!--Folder Structure-->
+        <div>
+            <h1 class="page-title">Folder Structure</h1>
+            <p style="max-width: fit-content; padding-bottom: 20px;">This is the folder structure for my portfolio and pretty much all my projects. I like to keep my code in the root folder, and any images or documents in folders within the root folder.</p>
+            <!-- Direct Code Block (No Card) -->
+            <pre class="code-block"><code>Desktop/portfoliosite/
+├── documents/
+│   └── cv
+├── images/
+│   └── [image assets]
+├── index.html
+├── home.html
+├── about.html
+├── experience.html
+├── myskills.html
+├── projects.html
+└── style.css</code></pre>
+        </div>
+
+            <!--Creative Sources-->
+        <div>
+            <h1 class="page-title">Creative Sources</h1>
+            <p style="max-width: fit-content; padding-bottom: 20px;">This is everything I used style wise outside of pure CSS code.</p>
+            <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.8; margin-bottom: 2rem;">
+                <li><strong>Layout & Portfolio Inspiration:</strong> Used <a href="https://www.pinterest.com/search/pins/?q=digital%20portfolio%20ideas&rs=ac&len=17&source_id=ac_QW9eHGaO&eq=digital%20portfolio&etslf=12520" target="_blank" class="regular-links" style="text-decoration: underline;">Pinterest</a> to gather visual layouts, design flows, and structural ideas.</li>
+                <li><strong>Typography:</strong> I usually scroll through <a href="https://fonts.google.com/" target="_blank" class="regular-links">Google Fonts</a>.</li>
+                <li><strong>Color Palette:</strong>I used my <a href="https://www.pinterest.com/princesssarty/colour-palettes/" target="_blank" class="regular-links">Pinterest Colour Palettes Board</a>.</li>
+            </ul>
+        </div>
+
+            <!--Index.html-->
+        <div>
+            <h1 class="page-title" style="padding-top: 20px;">index.html file</h1>
+            <p style="max-width: fit-content; padding-bottom: 20px;">This is the index.html file, which is the first page that loads when you visit my portfolio. It contains a welcome message and links to the other pages in my portfolio.</p>
+            <h2>The Basic Body of HTML code</h2>
+            <p style="max-width: fit-content; padding-bottom: 20px;">This is the basic structure of an HTML page. It includes the doctype declaration, html, head, and body tags. The head section contains meta information, title, and links to stylesheets and scripts. The body section contains the content of the page.</p>
+            
+            <pre class="code-block"><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;!-- Page content goes here --&gt;
+
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code>
+            </pre>
+            <h3>Notes:</h3>
+            <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.8; margin-bottom: 2rem;">
+                <li><strong><code>&lt;!DOCTYPE html&gt;</code></strong>: Tells the browser that the document is written in modern HTML5.</li>
+                <li><strong><code>&lt;html lang="en"&gt;</code></strong>: The root container wrapping everything, specifying that the page is in English.</li>
+                <li><strong><code>&lt;head&gt;</code></strong>: Houses behind-the-scenes metadata, character encoding (UTF-8), responsive scaling, tab titles, and CSS stylesheet links.</li>
+                <li><strong><code>&lt;body&gt;</code></strong>: Contains all the visible layout elements, text, and structure users interact with.</li>
+                <li><strong><code>&lt;script src="script.js"&gt;&lt;/script&gt;</code></strong>: Placed at the bottom to ensure interactive scripts load smoothly after the HTML renders.</li>
+            </ul>
+        </div>
+        <!-- Head Section -->
+        <div>
+            <h2>My <code>&lt;head&gt;</code> Section</h2>
+            <p style="max-width: fit-content; padding-bottom: 20px;">This is the head section of my index.html file. It contains meta information, title, and links to stylesheets and scripts.</p>
+            <pre class="code-block"><code>
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Landing Page&lt;/title&gt;
+    &lt;link rel="icon" href="images/head.ico" type="image/x-icon"&gt;
+    &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+    &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+    &lt;link href="https://fonts.googleapis.com/css2?family=Sniglet&amp;display=swap" rel="stylesheet"&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;</code></pre>
+                <h3>Notes:</h3>
+                <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.8; margin-bottom: 2rem;">
+                    <li><strong><code>&lt;meta charset="UTF-8"&gt;</code></strong>: Ensures the page correctly displays special characters and symbols.</li>
+                    <li><strong><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></strong>: Makes the page responsive on different devices.</li>
+                    <li><strong><code>&lt;title&gt;</code></strong>: Sets the title of the page that appears in the browser tab.</li>
+                    <li><strong><code>&lt;link rel="icon" href="images/head.ico" type="image/x-icon"&gt;</code></strong>: Links to the favicon that appears in the browser tab.</li>
+                    <li><strong><code>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</code></strong>: Preconnects to Google Fonts for faster loading.</li>
+                    <li><strong><code>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</code></strong>: Preconnects to Google Fonts' static content with cross-origin support.</li>
+                    <li><strong><code>&lt;link href="https://fonts.googleapis.com/css2?family=Sniglet&amp;display=swap" rel="stylesheet"&gt;</code></strong>: Links to a specific Google Font for use in the page.</li>
+                    <li><strong><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></strong>: Links to the external CSS stylesheet for styling the page.</li>
+                </ul>
+        </div>
+        <!--Body section-->
+        <div>
+            <h2>My <code>&lt;body&gt;</code> Section</h2>
+            <p style="max-width: fit-content; padding-bottom: 20px;">This is the body section of my index.html file. It contains all the visible layout elements, text, and structure users interact with.</p>
+            <pre class="code-block"><code>
+&lt;body&gt;
+    &lt;h1 title="That's my name!"&gt;Hi! I'm Sarty!&lt;/h1&gt;
+
+    &lt;img src="images/profile_pic.jfif" alt="Profile Picture" width="200" height="250" style="display: block; margin-left: auto; margin-right: auto; border: 4px solid #342519;" title="That's an avater representation of me!"&gt;
+    
+    &lt;p title="I'm still a student..."&gt;Bachelor of Computer Science | NUST | 2026 - Present | Windhoek, Namibia&lt;/p&gt;
+    &lt;div class="button-container"&gt;
+        &lt;a href="home.html" class="button" target="_self"&gt;More of my portfolio&lt;/a&gt;
+        &lt;a href="documents/CV.pdf" class="button" target="_blank"&gt;Look at my CV&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;p style="font-size: 18px;" title="Please contact me..."&gt;Like what you see so far?&lt;/p&gt;
+    
+    &lt;address style="font-size: 18px;" title="That's my email address!"&gt;
+        Email me at &lt;a href="mailto:sartyndafy@gmail.com" style="color: #342519;"&gt;sartyndafy@gmail.com&lt;/a&gt;
+    &lt;/address&gt;
+&lt;/body&gt;</code></pre>
+            <h3>Notes:</h3>
+            <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.8; margin-bottom: 2rem;">
+                <li><strong><code>&lt;h1&gt;</code></strong>: Displays the main heading of the page, which is my name.</li>
+                <li><strong><code>&lt;img&gt;</code></strong>: Displays my profile picture with specified width, height, and styling.</li>
+                <li><strong><code>&lt;p&gt;</code></strong>: Contains a paragraph about my current studies and location.</li>
+                <li><strong><code>&lt;div class="button-container"&gt;</code></strong>: Wraps the buttons for navigation to other pages and my CV.</li>
+                <li><strong><code>&lt;a href="home.html" class="button"&gt;</code></strong>: A button that links to the home page of my portfolio.</li>
+                <li><strong><code>&lt;a href="documents/CV.pdf" class="button"&gt;</code></strong>: A button that links to my CV in PDF format.</li>
+                <li><strong><code>&lt;address&gt;</code></strong>: Provides my email address for contact purposes.</li>
+                <li><strong><code>class</code></strong>: allows you to define reusable CSS styles.</li>
+                <li><strong><code>style</code></strong>: allows you to define inline CSS styles for specific elements.</li>
+                <li><strong><code>title</code></strong>: provides additional information about an element when hovered over. Not to be confused with the <code>&lt;title&gt;</code> attribute in the <code>&lt;head&gt;</code> section.</li>
+                <li><strong><code>target</code></strong>: specifies where to open the linked document. <code>_self</code> opens in the same tab, while <code>_blank</code> opens in a new tab.</li>
+                <li><strong><code>alt</code></strong>: provides alternative text for images, which is important for accessibility and SEO.</li>
+                <li><strong><code>mailto</code></strong>: creates a link that opens the user's default email client with the specified email address.</li>
+                <li><strong><code>folder/filename</code></strong>: when used in the <code>&lt;a&gt;</code> tag, links to a file within a specific folder.</li>
+            </ul>
+        </div>
+
+        <!--Home.html-->
+        <div>
+            <h1 class="page-title" style="padding-top: 20px;">home.html file</h1>
+            <p style="max-width: fit-content; padding-bottom: 20px;">This page contains a welcome message and links to the other pages in my portfolio.</p>
+            <p style="max-width: fit-content; padding-bottom: 20px;">My <code>&lt;head&gt;</code> is the same for all my files since they are all part of the same website.</p>
+        </div>
+        <!--Body-->
+        <div>
+            <h2>My <code>&lt;body&gt;</code> Section</h2>
+            <p style="max-width: fit-content; padding-bottom: 20px;">This is the body section of my home.html file. It contains all the visible layout elements, text, and structure users interact with. The options that users can choose from to browse my portfolio.</p>
+            <pre class="code-block"><code>
+&lt;body&gt;
+    &lt;h1 title="Click a button"&gt;Choose an option below:&lt;/h1&gt;
+
+    &lt;div class="button-container"&gt;
+        &lt;a href="about.html" class="button" target="_self"&gt;About me&lt;/a&gt;
+        &lt;a href="myskills.html" class="button" target="_self"&gt;My skills&lt;/a&gt;
+        &lt;a href="projects.html" class="button" target="_self"&gt;My projects&lt;/a&gt;
+        &lt;a href="experience.html" class="button" target="_self"&gt;My experience&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;p style="font-size: 18px;" title="Please contact me..."&gt;Like what you see so far?&lt;/p&gt;
+&lt;/body&gt;</code></pre>
+            <h3>Notes:</h3>
+            <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.8; margin-bottom: 2rem;">
+                <li><strong><code>&lt;h1&gt;</code></strong>: Displays the main heading of the page, prompting users to choose an option.</li>
+                <li><strong><code>&lt;div class="button-container"&gt;</code></strong>: Wraps the buttons for navigation to other pages in my portfolio.</li>
+                <li><strong><code>&lt;a href="about.html" class="button"&gt;</code></strong>: A button that links to the about page of my portfolio.</li>
+                <li><strong><code>&lt;a href="myskills.html" class="button"&gt;</code></strong>: A button that links to the skills page of my portfolio.</li>
+                <li><strong><code>&lt;a href="projects.html" class="button"&gt;</code></strong>: A button that links to the projects page of my portfolio.</li>
+                <li><strong><code>&lt;a href="experience.html" class="button"&gt;</code></strong>: A button that links to the experience page of my portfolio.</li>
+            </ul>
+        </div>
+
+        <!--experience.html-->
+        <div>
+            <h1 class="page-title" style="padding-top: 20px;">experience.html file</h1>
+            <p style="max-width: fit-content; padding-bottom: 20px;">This page contains a list of my work experience and skills.</p>
+            <p style="max-width: fit-content; padding-bottom: 20px;">My <code>&lt;head&gt;</code> is the same for all my files since they are all part of the same website.</p>
+        </div>
+        <!--Body-->
+        <div>
+            <h2>My <code>&lt;body&gt;</code> Section</h2>
+            <p style="max-width: fit-content; padding-bottom: 20px;">This is the body section of my experience.html file. It contains all the visible layout elements, text, and structure users interact with. The options that users can choose from to browse my portfolio.</p>
+            <pre class="code-block"><code>
+&lt;body&gt;
+    &lt;div class="page-content" id="pageContent"&gt;
+        &lt;h1 title="So, what have I done so far?"&gt;My Experience&lt;/h1&gt;
+        &lt;div class="skills-container"&gt;
+            &lt;div class="skill-card"&gt;
+                &lt;h3&gt;Founder and small business owner – Press on nails&lt;/h3&gt;
+                &lt;h4&gt;June 2026 – Present&lt;/h4&gt;
+                &lt;ul style="list-style-type: none; padding: 0;"&gt;
+                    &lt;p&gt;Communicated directly with customers and managed custom orders.&lt;/p&gt;
+                    &lt;p&gt;Developed product pricing by calculating material costs, packaging expenses
+                        and profit margins.&lt;/p&gt;
+                    &lt;p&gt;Managed inventory and purchasing of materials&lt;/p&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;p style="font-size: 18px; text-align: center;" title="Please contact me..."&gt;Like what you see so far?&lt;/p&gt;
+        &lt;address style="font-size: 18px;" title="That's my email address!"&gt;Email me at &lt;a href="mailto:sartyndafy@gmail.com" style="color: #342519;"&gt;sartyndafy@gmail.com&lt;/a&gt;
+        &lt;/address&gt;
+    &lt;/div&gt;
+    &lt;button class="menu-button" onclick="toggleMenu()" aria-label="Navigation"&gt;
+            &lt;span&gt;&lt;/span&gt;
+            &lt;span&gt;&lt;/span&gt;
+            &lt;span&gt;&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;aside class="sidebar" id="sidebar"&gt;
+            &lt;nav&gt;
+                &lt;a href="index.html" class="button"&gt;Landing Page&lt;/a&gt;
+                &lt;a href="home.html" class="button"&gt;Selection Page&lt;/a&gt;
+                &lt;a href="about.html" class="button"&gt;About Me&lt;/a&gt;
+                &lt;a href="projects.html" class="button"&gt;Projects&lt;/a&gt;
+                &lt;a href="myskills.html" class="button"&gt;My Skills&lt;/a&gt;
+                &lt;a href="documents/CV.pdf" target="_blank" class="button"&gt;CV&lt;/a&gt;
+            &lt;/nav&gt;
+        &lt;/aside&gt;
+&lt;/body&gt;</code></pre>
+            <h3>Notes:</h3>
+            <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.8; margin-bottom: 2rem;">
+                <li><strong><code>&lt;div class="page-content"&gt;</code></strong>: Wraps the main content of the page.</li>
+                <li><strong><code>&lt;h1&gt;</code></strong>: Displays the main heading of the page, which is "My Experience".</li>
+                <li><strong><code>&lt;div class="skills-container"&gt;</code></strong>: Wraps the skill cards that display my work experience.</li>
+                <li><strong><code>&lt;div class="skill-card"&gt;</code></strong>: Represents a single skill or experience card.</li>
+                <li><strong><code>&lt;h3&gt;</code></strong>: Displays the title of the experience.</li>
+                <li><strong><code>&lt;h4&gt;</code></strong>: Displays the date range of the experience.</li>
+                <li><strong><code>&lt;ul&gt;</code></strong>: Contains a list of responsibilities or achievements for the experience.</li>
+                <li><strong><code>&lt;p&gt;</code></strong>: Contains individual points about the experience.</li>
+                <li><strong><code>&lt;button class="menu-button"&gt;</code></strong>: A button to toggle the sidebar navigation menu.</li>
+                <li><strong><code>&lt;aside class="sidebar"&gt;</code></strong>: Contains the sidebar navigation links.</li>
+            </ul>
+        </div>
+
+        <!--myskills.html-->
+        <div>
+            <h1 class="page-title" style="padding-top: 20px;">myskills.html file</h1>
+            <p style="max-width: fit-content; padding-bottom: 20px;">This page contains a list of my skills and technologies I am familiar with.</p>
+            <p style="max-width: fit-content; padding-bottom: 20px;">My <code>&lt;head&gt;</code> is the same for all my files since they are all part of the same website.</p>
+        </div>
+        <!--Body section-->
+        <div>
+            <h2>My <code>&lt;body&gt;</code> Section</h2>
+            <p style="max-width: fit-content; padding-bottom: 20px;">This contains all my skills, grouped into specific cards.</p>
+            <pre class="code-block"><code>
+&lt;body&gt;
+    &lt;div class="page-content" id="pageContent"&gt;
+        &lt;h1 title="So, what am I good at?"&gt;My Skills&lt;/h1&gt;
+        &lt;div class="skills-container"&gt;
+            &lt;div class="skill-card"&gt;
+                &lt;h3&gt;Technical Skills&lt;/h3&gt;
+                &lt;ul style="list-style-type: none; padding: 0;"&gt;
+                    &lt;p&gt;HTML&lt;/p&gt;
+                    &lt;p&gt;CSS&lt;/p&gt;
+                    &lt;p&gt;Git &amp; Github&lt;/p&gt;
+                    &lt;p&gt;Responsive web design&lt;/p&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class="skill-card"&gt;
+                &lt;h3&gt;Design &amp; Creative&lt;/h3&gt;
+                &lt;ul style="list-style-type: none; padding: 0;"&gt;
+                    &lt;p&gt;UI/UX Design&lt;/p&gt;
+                    &lt;p&gt;Graphic Design&lt;/p&gt;
+                    &lt;p&gt;Visual Design&lt;/p&gt;
+                    &lt;p&gt;Prototyping&lt;/p&gt;
+                    &lt;p&gt;Supabase&lt;/p&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class="skill-card"&gt;
+                &lt;h3&gt;Problem solving &amp; analysis&lt;/h3&gt;
+                &lt;ul style="list-style-type: none; padding: 0;"&gt;
+                    &lt;p&gt;Problem solving&lt;/p&gt;
+                    &lt;p&gt;Logical thinking&lt;/p&gt;
+                    &lt;p&gt;Analytical thinking&lt;/p&gt;
+                    &lt;p&gt;Research&lt;/p&gt;
+                    &lt;p&gt;Design thinking&lt;/p&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class="skill-card"&gt;
+                &lt;h3&gt;Project &amp; Development&lt;/h3&gt;
+                &lt;ul style="list-style-type: none; padding: 0;"&gt;
+                    &lt;p&gt;Software development&lt;/p&gt;
+                    &lt;p&gt;Web development&lt;/p&gt;
+                    &lt;p&gt;Project planning&lt;/p&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class="skill-card"&gt;
+                &lt;h3&gt;Professional SKills&lt;/h3&gt;
+                &lt;ul style="list-style-type: none; padding: 0;"&gt;
+                    &lt;p&gt;Communication&lt;/p&gt;
+                    &lt;p&gt;Teamwork&lt;/p&gt;
+                    &lt;p&gt;Time management&lt;/p&gt;
+                    &lt;p&gt;Creativity&lt;/p&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;p style="font-size: 18px; text-align: center;" title="Please contact me..."&gt;Like what you see so far?&lt;/p&gt;
+        &lt;button class="menu-button" onclick="toggleMenu()" aria-label="Navigation">&gt;
+            &lt;span&gt;&lt;/span&gt;
+            &lt;span&gt;&lt;/span&gt;
+            &lt;span&gt;&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;aside class="sidebar" id="sidebar"&gt;
+            &lt;nav&gt;
+                &lt;a href="index.html" class="button"&gt;Landing Page&lt;/a&gt;
+                &lt;a href="home.html" class="button"&gt;Selection Page&lt;/a&gt;
+                &lt;a href="about.html" class="button"&gt;About Me&lt;/a&gt;
+                &lt;a href="projects.html" class="button"&gt;Projects&lt;/a&gt;
+                &lt;a href="experience.html" class="button"&gt;Experience&lt;/a&gt;
+                &lt;a href="documents/CV.pdf" target="_blank" class="button"&gt;CV&lt;/a&gt;
+            &lt;/nav&gt;
+        &lt;/aside&gt;
+    &lt;/div&gt;
+&lt;/body&gt;</code></pre>
+            <h3>Notes:</h3>
+            <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.8; margin-bottom: 2rem;">
+                <li><strong><code>&lt;div class="page-content"&gt;</code></strong>: Wraps the main content of the page.</li>
+                <li><strong><code>&lt;h1&gt;</code></strong>: Displays the main heading of the page, which is "My Skills".</li>
+                <li><strong><code>&lt;div class="skills-container"&gt;</code></strong>: Wraps the skill cards that display my skills.</li>
+                <li><strong><code>&lt;div class="skill-card"&gt;</code></strong>: Represents a single skill or skill category card.</li>
+                <li><strong><code>&lt;h3&gt;</code></strong>: Displays the title of the skill category.</li>
+                <li><strong><code>&lt;ul&gt;</code></strong>: Contains a list of individual skills within the category.</li>
+                <li><strong><code>&lt;p&gt;</code></strong>: Contains individual points about each skill.</li>
+                <li><strong><code>&lt;button class="menu-button"&gt;</code></strong>: A button to toggle the sidebar navigation menu.</li>
+                <li><strong><code>&lt;aside class="sidebar"&gt;</code></strong>: Contains the sidebar navigation links.</li>
+            </ul>
+        </div>
+
+        <!--projects.html-->
+        <div>
+            <h1 class="page-title" style="padding-top: 20px;">projects.html file</h1>
+            <p style="max-width: fit-content; padding-bottom: 20px;">This page contains a list of my projects and links to their respective pages.</p>
+            <p style="max-width: fit-content; padding-bottom: 20px;">My <code>&lt;head&gt;</code> is the same for all my files since they are all part of the same website.</p>
+        </div>
+        <!--Body section-->
+        <div>
+            <h2>My <code>&lt;body&gt;</code> Section</h2>
+            <p style="max-width: fit-content; padding-bottom: 20px;">This contains the link to all my projects that I've worked on so far.</p>
+            <pre class="code-block"><code>
+&lt;body&gt;
+    &lt;div class="page-content" id="pageContent"&gt;
+            &lt;h1 title="So, what have I done so far?"&gt;My Projects&lt;/h1&gt;
+            &lt;div class="skills-container"&gt;
+            &lt;div class="skill-card"&gt;
+                &lt;h3&gt;Personal Portfolio&lt;/h3&gt;
+                &lt;h4&gt;August 2026 | HTML | CSS | JAVA SCRIPT&lt;/h4&gt;
+                &lt;ul style="list-style-type: none; padding: 0;"&gt;
+                    &lt;p&gt;Link to site: &lt;a href="https://portfoliosite.sartyndafy.workers.dev" style="color: #342519;" target="_blank"&gt;Portfolio&lt;/a&gt;&lt;/p&gt;
+                    &lt;p&gt;Static site to display my experience, skills, and projects.&lt;/p&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class="skill-card"&gt;
+                &lt;h3&gt;Task Manager web app&lt;/h3&gt;
+                &lt;h4&gt;August 2026 - Present | HTML | CSS | JAVA SCRIPT | SUPABASE&lt;/h4&gt;
+                &lt;ul style="list-style-type: none; padding: 0;"&gt;
+                    &lt;p&gt;Link to site: &lt;a href="https://task-manager.sartyndafy.workers.dev" style="color: #342519;" target="_blank"&gt;Task Manager&lt;/a&gt;&lt;/p&gt;
+                    &lt;p&gt;Web app to manage tasks and projects with user authentication and database integration.&lt;/p&gt;
+                    &lt;p&gt;Auto deletion of tasks marked as completed after 24 hours.&lt;/p&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class="skill-card"&gt;
+                &lt;h3&gt;Code dictionary&lt;/h3&gt;
+                &lt;h4&gt;October 2026 - Present | HTML | CSS&lt;/h4&gt;
+                &lt;ul style="list-style-type: none; padding: 0;"&gt;
+                    &lt;p&gt;Link to site: &lt;a href="https://lwm.sartyndafy.workers.dev" style="color: #342519;" target="_blank"&gt;Learn with me ☺&lt;/a&gt;&lt;/p&gt;
+                    &lt;p&gt;A minimalist personal web-based dictionary for code snippets and technical documentation.&lt;/p&gt;
+                    &lt;p&gt;Organizes code solutions, tags, and plain-English explanations for quick reference while learning.&lt;/p&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;p style="font-size: 18px; text-align: center;" title="Please contact me..."&gt;Like what you see so far?&lt;/p&gt;
+            &lt;address style="font-size: 18px;" title="That's my email address!"&gt;Email me at &lt;a href="mailto:sartyndafy@gmail.com" style="color: #342519;"&gt;sartyndafy@gmail.com&lt;/a&gt;
+            &lt;/address&gt;
+        &lt;/div&gt;
+        &lt;button class="menu-button" onclick="toggleMenu()" aria-label="Navigation"&gt;
+            &lt;span&gt;&lt;/span&gt;
+            &lt;span&gt;&lt;/span&gt;
+            &lt;span&gt;&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;aside class="sidebar" id="sidebar"&gt;
+            &lt;nav&gt;
+                &lt;a href="index.html" class="button">Landing Page</a>
+                &lt;a href="home.html" class="button">Selection Page</a>
+                &lt;a href="about.html" class="button">About Me</a>
+                &lt;a href="projects.html" class="button">Projects</a>
+                &lt;a href="experience.html" class="button">Experience</a>
+                &lt;a href="documents/CV.pdf" target="_blank" class="button">CV</a>
+            &lt;/nav&gt;
+        &lt;/aside&gt;
+&lt;/body&gt;</code></pre>
+            <h3>Notes:</h3>
+            <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.8; margin-bottom: 2rem;">
+                <li><strong><code>&lt;div class="page-content"&gt;</code></strong>: Wraps the main content of the page.</li>
+                <li><strong><code>&lt;h1&gt;</code></strong>: Displays the main heading of the page, which is "My Projects".</li>
+                <li><strong><code>&lt;div class="skills-container"&gt;</code></strong>: Wraps the project cards that display my projects.</li>
+                <li><strong><code>&lt;div class="skill-card"&gt;</code></strong>: Represents a single project card.</li>
+                <li><strong><code>&lt;h3&gt;</code></strong>: Displays the title of the project.</li>
+                <li><strong><code>&lt;h4&gt;</code></strong>: Displays the date range and technologies used for the project.</li>
+                <li><strong><code>&lt;ul&gt;</code></strong>: Contains a list of details about the project.</li>
+                <li><strong><code>&lt;p&gt;</code></strong>: Contains individual points about each project.</li>
+                <li><strong><code>&lt;a href="project-link"&gt;</code></strong>: A link to the live project or repository.</li>
+            </ul>
+        </div>
+
+        <!--styles.css-->
+        <div>
+            <h1 class="page-title" style="padding-top: 20px;">styles.css file</h1>
+            <p style="max-width: fit-content; padding-bottom: 20px;">This page contains the CSS styles for my portfolio. It defines the look and feel of the website, including layout, colors, fonts, and responsive design.</p>
+            <p style="max-width: fit-content; padding-bottom: 20px;">Linked from the <code>&lt;head&gt;</code> section using the code line <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>.</p>
+        </div>
+        <!--Basic structure-->
+        <div>
+            <h2>Basic Structure of a CSS File</h2>
+            <p style="max-width: fit-content; padding-bottom: 20px;">The basic structure of a CSS file includes selectors and declarations. Selectors target HTML elements, and declarations define the styles to be applied to those elements. You can have this as a file separate from your html file, or use the <code>&lt;style&gt;</code> tag within the <code>&lt;head&gt;</code> section.</p>
+            <pre class="code-block"><code>
+selector {
+    property: value;
+}
+.class {
+    property: value;
+}
+            </code></pre>
+            <h3>Notes:</h3>
+            <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.8; margin-bottom: 2rem;">
+                <li><strong>selector</strong>: Targets specific HTML elements to apply styles.</li>
+                <li><strong>property</strong>: The CSS property you want to change (e.g., color, font-size).</li>
+                <li><strong>value</strong>: The value assigned to the property (e.g., red, 16px).</li>
+                <li><strong>.class</strong>: Targets elements with a specific class attribute, under the <code>class="class-name"</code> tag in your html file.</li>
+            </ul>
+        </div>
+        <!--sidebarmenucss-->
+        <div>
+            <h2>My Sidebar Menu CSS</h2>
+            <p style="max-width: fit-content; padding-bottom: 20px;">This is the CSS code for my sidebar menu. It defines the styles for the sidebar, including its position, size, background color, and transition effects.</p>
+            <pre class="code-block"><code>
+.menu-button {
+                position: fixed;
+                top: 20px;
+                left: 20px;
+                width: 45px;
+                height: 45px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                background: none;
+                border: none;
+                cursor: pointer;
+                z-index: 1001; /* Ensure the button is above other elements */
+            }
+            .menu-button span {
+                width: 28px;
+                height: 3px;
+                background-color: #342519;
+                transition: transform 0.3s ease, opacity 0.3s ease;
+                border-radius: 5px;
+            }
+            .menu-button.open span{
+                background-color: #ede6d9;
+            }
+            .sidebar {
+                position: fixed;
+                top: 0;
+                left: 0; /* Hide the sidebar initially */
+                width: 250px;
+                height: 100%;
+                background-color: #342519;
+                color: #ede6d9;
+                padding: 90px 30px 30px;
+                display: flex;
+                flex-direction: column;
+                transition: left 0.35s ease;
+                z-index: 1000; /* Ensure the sidebar is above other elements */
+                transform: translateX(-100%); /* Hide the sidebar initially */
+                transition: transform 0.35s ease; /* Smooth transition for sliding effect */
+            }
+            .sidebar.open {
+                transform: translateX(0); /* Slide the sidebar into view */
+            }
+            .sidebar nav {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            .sidebar nav a {
+                color: #ede6d9;
+                text-decoration: none;
+                font-size: 18px;
+                transition: color 0.2s ease;
+            }
+            .sidebar-button {
+                position: fixed;
+                top: 20px;
+                left: 20px;
+                width: 45px;
+                height: 45px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                background: none;
+                border: 2px solid #ede6d9;
+                cursor: pointer;
+                z-index: 1001; /* Ensure the button is above other elements */
+            }
+            .sidebar nav a:hover {
+                transform: translateX(5px);
+            }
+            .menu-button.open span:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+            .menu-button.open span:nth-child(2) {
+                opacity: 0;
+            }
+            .menu-button.open span:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+            .page-content {
+                transition: transform 0.35s ease;
+                width: 90%;
+                max-width: 1000px;
+                margin: 0 auto;
+            }
+            .page-content.shifted {
+                transform: translateX(250px); /* Shift the content to the right when the sidebar is open */
+            }
+            .button {
+                background-color: #342519;
+                color: #ede6d9;
+                border-color:#ede6d9;
+                display: inline-block;
+                text-decoration: none;
+                border: 2px solid #ede6d9;
+                border-radius: 20px;
+                padding: 10px 20px;
+                width: min(80%, 200px);
+                margin-top: 1px;
+            }
+            @media (max-width: 600px) {
+                .skills-container {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                justify-content: center;
+            }
+        }</code></pre>
+            <h3>Notes:</h3>
+            <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.8; margin-bottom: 2rem;">
+                <li><strong>.menu-button</strong>: Styles the menu button that toggles the sidebar.</li>
+                <li><strong>.sidebar</strong>: Styles the sidebar, including its position, size, background color, and transition effects.</li>
+                <li><strong>.sidebar.open</strong>: Styles the sidebar when it is open, sliding it into view.</li>
+                <li><strong>.page-content.shifted</strong>: Styles the main page content when the sidebar is open, shifting it to the right.</li>
+                <li><strong>@media (max-width: 600px)</strong>: A media query that applies styles for screens with a maximum width of 600px, making the skills container display in a column layout for better responsiveness.</li>
+                <li><strong>.button</strong>: Styles the buttons used for navigation and links, including background color, text color, border, padding, and border-radius.</li>
+                <li><strong>.sidebar nav a:hover</strong>: Adds a hover effect to the sidebar navigation links, moving them slightly to the right when hovered over.</li>
+                <li><strong>.menu-button.open span:nth-child(1)</strong>: Styles the first span of the menu button when it is open, rotating it to form an "X" shape.</li>
+                <li><strong>.menu-button.open span:nth-child(2)</strong>: Styles the second span of the menu button when it is open, making it invisible.</li>
+                <li><strong>.menu-button.open span:nth-child(3)</strong>: Styles the third span of the menu button when it is open, rotating it to form an "X" shape.</li>
+                <li><strong>.page-content</strong>: Styles the main page content, including transition effects for smooth shifting when the sidebar is toggled.</li>
+                <li><strong>.sidebar-button</strong>: Styles the sidebar button, which is similar to the menu button but with a border.</li>
+                <li><strong>.sidebar nav a</strong>: Styles the links in the sidebar navigation, including color, text decoration, font size, and transition effects.</li>
+                <li><strong>.sidebar nav</strong>: Styles the navigation container within the sidebar, arranging the links in a column layout with spacing between them.</li>
+                <li><strong>.menu-button span</strong>: Styles the individual spans within the menu button, including size, background color, transition effects, and border radius.</li>
+                <li><strong>.sidebar</strong>: Styles the sidebar, including its position, size, background color, padding, display properties, transition effects, and z-index to ensure it appears above other elements.</li>
+                <li><strong>.skills-container</strong>: Styles the container for the skills section, including layout, spacing, and visual appearance.</li>
+            </ul>
+        </div>
+        <!--importing fonts-->
+        <div>
+            <h2>Importing Fonts</h2>
+            <p style="max-width: fit-content; padding-bottom: 20px;">This is the code to import fonts from Google Fonts. It allows you to use custom fonts in your website by linking to the font files hosted on Google's servers.</p>
+            <pre class="code-block"><code>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+            </code></pre>
+            <h3>Notes:</h3>
+            <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.8; margin-bottom: 2rem;">
+                <li><strong>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');</strong>: Imports the Roboto font from Google Fonts, allowing you to use it in your CSS styles.</li>
+            </ul>
+        </div>
+        <!--main css tags, no class tags-->
+        <div>
+            <h2>Main CSS Tags</h2>
+            <p style="max-width: fit-content; padding-bottom: 20px;">These are the main CSS tags used in my styles.css file. They define the overall layout, typography, and appearance of the website.</p>
+            <pre class="code-block"><code>
+body {
+    background-color: #ede6d9; 
+    color: #342519; 
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Sniglet';
+}
+
+h3 {
+    font-size: 24px;
+    font-family: 'Sniglet';
+}
+
+p {
+    font-size: 20px;
+}</code></pre>
+            <h3>Notes:</h3>
+            <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.8; margin-bottom: 2rem;">
+                <li><strong>body</strong>: Styles the body of the webpage, setting the background color, text color, and text alignment.</li>
+                <li><strong>h1</strong>: Styles the main headings (h1) on the webpage, setting the font size and font family.</li>
+                <li><strong>h3</strong>: Styles the subheadings (h3) on the webpage, setting the font size and font family.</li>
+                <li><strong>p</strong>: Styles the paragraph text (p) on the webpage, setting the font size.</li>
+            </ul>
+        </div>
+        <!--class css tags-->
+        <div>
+            <h2>Class CSS Tags</h2>
+            <p style="max-width: fit-content; padding-bottom: 20px;">These are the class CSS tags used in my styles.css file. They define specific styles for elements that have certain classes assigned to them.</p>
+            <pre class="code-block"><code>
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.button {
+    background-color: #ede6d9;
+    color: #342519;
+    border-color:#342519;
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid #342519;
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: min(80%, 200px);
+}
+
+.button:hover {
+    background-color: #342519;
+    color: #ede6d9;
+    transform: scale(1.05);
+}</code></pre>
+            <h3>Notes:</h3>
+            <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.8; margin-bottom: 2rem;">
+                <li><strong>.button-container</strong>: Styles the container for buttons, arranging them in a column layout with spacing between them and centering them horizontally.</li>
+                <li><strong>.button</strong>: Styles the buttons, setting background color, text color, border properties, border radius, padding, and width.</li>
+                <li><strong>.button:hover</strong>: Styles the buttons when hovered over, changing background color, text color, and applying a scaling effect for interactivity.</li>
+            </ul>
+        </div>
+        <!--miscellaneous css tags-->
+        <div>
+            <h2>Miscellaneous CSS Tags</h2>
+            <p style="max-width: fit-content; padding-bottom: 20px;">These are miscellaneous CSS tags used in my styles.css file. They define additional styles for various elements on the webpage that you don't <span style="font-style: italic;">have</span> to change, I'm just whimsy.</p>
+            <pre class="code-block"><code>
+::selection {
+    background-color: #342519;
+    color: #ede6d9;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-color: #342519 #ede6d9;
+    scrollbar-width: auto;
+}</code></pre>
+            <h3>Notes:</h3>
+            <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.8; margin-bottom: 2rem;">
+                <li><strong>::selection</strong>: Styles the text selection, changing the background colour and text colour when text is highlighted.</li>
+                <li><strong>html</strong>: Styles the HTML element, enabling smooth scrolling behavior and customizing the scrollbar colours and width. The first colour is the thumb colour, and the second is the track colour.</li>
+            </ul>
+        </div>
+
+        <!--script.js-->
+        <div>
+            <h1 class="page-title" style="padding-top: 20px;">script.js file</h1>
+            <p style="max-width: fit-content; padding-bottom: 20px;">This page contains the JavaScript code for my portfolio. It adds interactivity and dynamic behavior to the website, such as toggling the sidebar menu.</p>
+            <p style="max-width: fit-content; padding-bottom: 20px;">Linked from the <code>&lt;body&gt;</code> section using the code line <code>&lt;script src="script.js"&gt;&lt;/script&gt;</code>.</p>
+        </div>
+        <!--Basic structure-->
+        <div>
+            <h2>Basic Structure of a JavaScript File</h2>
+            <p style="max-width: fit-content; padding-bottom: 20px;">The basic structure of a JavaScript file includes functions and event listeners. Functions define reusable blocks of code, and event listeners respond to user interactions. You can have this as a file separate from your html file, or use the <code>&lt;script&gt;</code> tag within the <code>&lt;body&gt;</code> section.</p>
+            <pre class="code-block"><code>
+function myFunction() {
+    // Code to be executed
+}</code></pre>
+            <h3>Notes:</h3>
+            <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.8; margin-bottom: 2rem;">
+                <li><strong>function</strong>: Defines a reusable block of code that can be called by its name.</li>
+                <li><strong>myFunction()</strong>: The name of the function, which can be called to execute the code inside it.</li>
+                <li><strong>// Code to be executed</strong>: A comment indicating where the code to be executed should be placed.</li>
+            </ul>
+        </div>
+        <!--script.js file-->
+        <div>
+            <h2>My <code>&lt;script&gt;</code> Section</h2>
+            <p style="max-width: fit-content; padding-bottom: 20px;">This is the script section of all my html files. It contains all the JavaScript code that adds interactivity and dynamic behavior to the website. A main one being the sidebar menu.</p>
+            <pre class="code-block"><code>
+function toggleMenu() {
+                const sidebar = document.getElementById('sidebar');
+                const button = document.querySelector('.menu-button');
+                const pageContent = document.getElementById('pageContent');
+
+                sidebar.classList.toggle('open');
+                button.classList.toggle('open');
+                pageContent.classList.toggle('shifted');
+            }</code></pre>
+            <h3>Notes:</h3>
+            <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.8; margin-bottom: 2rem;">
+                <li><strong>toggleMenu()</strong>: The name of the function, which can be called to toggle the sidebar menu.</li>
+                <li><strong>sidebar</strong>: The element representing the sidebar.</li>
+                <li><strong>button</strong>: The element representing the menu button.</li>
+                <li><strong>pageContent</strong>: The element representing the main page content.</li>
+                <li><strong>classList.toggle()</strong>: A method that adds or removes a class from an element's class list, allowing for dynamic styling changes.</li>
+                <li><strong>'open'</strong>: A class that is toggled on the sidebar and button elements to show or hide the sidebar menu.</li>
+                <li><strong>'shifted'</strong>: A class that is toggled on the page content to shift it when the sidebar is open.</li>
+                <li><strong>document.getElementById()</strong>: A method that retrieves an element by its ID.</li>
+            </ul>
+        </div>
+
+           <address style="font-size: 18px; padding-top: 40px;" title="That's my email address!">Email me at <a href="mailto:sartyndafy@gmail.com" style="color: #45171b;" class="regular-links">sartyndafy@gmail.com</a> if you experience any issues.</address>
     </main>
     <script src="script.js"></script>
 </body>
