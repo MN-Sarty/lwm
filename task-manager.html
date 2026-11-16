@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My html code ☺</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task Manager ☺</title>
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/logo/lwm-logo.png" />
     <link rel="stylesheet" href="style.css" />
@@ -21,11 +21,10 @@
         </div>
         <!-- Navigation buttons -->
         <nav class="nav-buttons">
-            <a href="extensions.html" class="nav-button">VS Code extensions</a>
-            <a href="creativesources.html" class="nav-button">Creative Sources</a>
-            <a href="jscode.html" class="nav-button">JavaScript</a>
-            <a href="csscode.html" class="nav-button">CSS</a>
-            <a href="key.html" class="nav-button">Key</a>           
+            <a href="home.html" class="nav-button">Home</a> 
+            <a href="portfolio.html" class="nav-button">Portfolio</a>
+            <a href="lwm.html" class="nav-button">Learn With Me </a>
+            <a href="sh.html" class="nav-button">Sarty's House</a>
         </nav>
         <!-- Search Container (Place inside your top nav) -->
         <div class="search-container">
@@ -35,183 +34,189 @@
             <input type="text" id="search-input" class="search-bar hidden" placeholder="Search page...">
         </div>
     </header>
-
     <!-- Page content -->
     <main class="content-container">
-    <h1 class="page-title">HTML Boilerplate Skeleton</h1>
-
-    <!-- Card containing ONLY the code snippet -->
-    <div class="snippet-card">
-        <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
+        <!-- Page title and description -->
+        <div class="content">
+            <h1 class="page-title">A few notes on Taskie</h1>
+            <p style="max-width: fit-content; padding-bottom: 20px;">This is my task manager project. It is a simple web application that allows users to create, edit, and delete tasks. I used Supabase for the backend. To access my task manager, <a href="https://task-manager.sartyndafy.workers.dev" class="regular-links">click here</a>.</p>
+        </div>
+        <!--Folder Structure-->
+        <div>
+            <h1 class="page-title">Folder Structure</h1>
+            <p style="max-width: fit-content; padding-bottom: 20px;">This is the folder structure for my portfolio and pretty much all my projects. I like to keep my code in the root folder, and any images or documents in folders within the root folder.</p>
+            <!-- Direct Code Block (No Card) -->
+            <pre class="code-block"><code>Desktop/task_manager/
+├── images/
+│   └── [image assets]
+├── index.html
+├── signup.html
+├── terms.html
+├── login.html
+├── dash.html
+├── style.css
+├── signup.js
+├── login.js
+├── dash.js
+└── sw.js</code></pre>
+        </div>
+        <!--Creative Sources-->
+        <div>
+            <h1 class="page-title">Creative Sources</h1>
+            <p style="max-width: fit-content; padding-bottom: 20px;">This is everything I used style wise outside of pure CSS code.</p>
+            <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.8; margin-bottom: 2rem;">
+                <li><strong>Layout & Portfolio Inspiration:</strong> Used <a href="https://www.pinterest.com/search/pins/?q=digital%20portfolio%20ideas&rs=ac&len=17&source_id=ac_QW9eHGaO&eq=digital%20portfolio&etslf=12520" target="_blank" class="regular-links" style="text-decoration: underline;">Pinterest</a> to gather visual layouts, design flows, and structural ideas.</li>
+                <li><strong>Typography:</strong> I usually scroll through <a href="https://fonts.google.com/" target="_blank" class="regular-links">Google Fonts</a>.</li>
+                <li><strong>Color Palette:</strong>I used my <a href="https://www.pinterest.com/princesssarty/colour-palettes/" target="_blank" class="regular-links">Pinterest Colour Palettes Board</a>.</li>
+                <li><strong>Code Backup:</strong> I use <a href="https://github.com/" target="_blank" class="regular-links">GitHub</a> to backup my code and keep track of changes.</li>
+                <li><strong>Free web hosting:</strong> I use <a href="https://www.cloudflare.com/" target="_blank" class="regular-links">Cloudflare</a> for free web hosting.</li>
+                <li><strong>Backend and database:</strong> I use <a href="https://supabase.com/" target="_blank" class="regular-links">Supabase</a> for the backend of my task manager.</li>
+            </ul>
+        </div>
+        <!--Index.html-->
+        <div>
+            <h1 class="page-title">Index.html File</h1>
+            <p style="max-width: fit-content; padding-bottom: 20px;">This is the index.html file for my task manager project. It is the page you see before logging in or signing up.</p>
+            <!--Head section-->
+            <div>
+                <!--Head section-->
+                <h2>My &lt;head&gt; Section</h2>
+                <p style="max-width: fit-content; padding-bottom: 20px;">This is the &lt;head&gt; section of my index.html file. It contains the meta tags, title, and links to the CSS and Google Fonts.</p>
+                <pre class="code-block"><code>
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
     &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;My Page&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-    </div>
-
-    <!-- Notes section sitting outside the card underneath -->
-    <section class="code-notes-section">
-        <h2 class="notes-heading" style="padding-bottom: 10px;">Breakdown & Notes</h2>
-        <ul class="notes-list">
-            <li><code style="color: #2d4a3e;">&lt;!DOCTYPE html&gt;</code> tells the browser that this is an HTML5 document.</li>
-            <li><code style="color: #2d4a3e;">&lt;html lang="en"&gt;</code> is the root element that wraps everything and sets the primary language to English.</li>
-            <li><code style="color: #2d4a3e;">&lt;head&gt;</code> acts as a container for metadata, links, and the page title (hidden from the actual visible page).</li>
-            <li><code style="color: #2d4a3e;">&lt;meta charset="UTF-8"&gt;</code> sets the character encoding so text and symbols render correctly.</li>
-            <li><code style="color: #2d4a3e;">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code> ensures your layout scales properly and looks good on mobile screens, but you may need to adjust it for specific designs.</li>
-            <li><code style="color: #2d4a3e;">&lt;title&gt;</code> sets the text shown in the browser tab.</li>
-            <li><code style="color: #2d4a3e;">&lt;body&gt;</code> contains all the actual visible content of your webpage.</li>
-            <li>Remember to close all your tags properly to avoid rendering issues.</li>
-        </ul>
-    </section>
-
-    <h1 class="page-title">Adding more detail to your head tag</h1>
-    <div class="snippet-card">
-        <pre class="code-block"><code>&lt;head&gt;
-    &lt;link rel="icon" href="images/head.ico" type="image/x-icon"&gt;
-    &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
-    &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
-    &lt;link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet"&gt;
-    &lt;link rel="stylesheet" href="styles.css"&gt;
+    &lt;title&gt;Taskie&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+    &lt;link rel="icon" href="images/Taskie.png" type="image/png"&gt;
+    &lt;link rel="preconnect" href="https://fonts.googleapis.com">
+    &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    &lt;link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 &lt;/head&gt;</code></pre>
-    </div>
-
-    <!-- Notes section sitting outside the card underneath -->
-    <section class="code-notes-section">
-        <h2 class="notes-heading">Breakdown & Notes</h2>
-    
-        <div style="margin-bottom: 1.2rem;">
-            <h3 style="font-size: 1.2rem; margin-bottom: 0.4rem; color: #45171b;">The Core Element: <code style="color: #2d4a3e;">&lt;link&gt;</code></h3>
-            <p style="font-size: 1.1rem; line-height: 1.5;">Defines a relationship between the current document and an external resource. It is always placed inside the <code style="color: #2d4a3e;">&lt;head&gt;</code> section.</p>
-            <ul class="notes-list">
-                <li><code style="color: #2d4a3e;">rel</code> (Relationship): Specifies how the current page relates to the linked resource (e.g., <code style="color: #2d4a3e;">stylesheet</code>, <code style="color: #2d4a3e;">icon</code>, <code style="color: #2d4a3e;">preconnect</code>).</li>
-                <li><code style="color: #2d4a3e;">href</code> (Hypertext Reference): Specifies the URL or file path of the external resource.</li>
-                <li><code style="color: #2d4a3e;">type</code>: Specifies the media type or MIME type of the linked document (e.g., <code style="color: #2d4a3e;">image/x-icon</code>).</li>
-                <li><code style="color: #2d4a3e;">crossorigin</code>: Instructs the browser to fetch the resource with CORS enabled, improving performance when loading external fonts.</li>
-                <li><code style="color: #2d4a3e;">&lt;link rel="icon" ...&gt;</code> sets the small icon that appears in the browser tab.</li>
-                <li><code style="color: #2d4a3e;">&lt;link rel="preconnect" ...&gt;</code> tells the browser to set up an early connection to Google Fonts before files are requested, speeding up page load times.</li>
-                <li><code style="color: #2d4a3e;">&lt;link rel="stylesheet" ...&gt;</code> links your main custom CSS file to style the webpage.</li>
-            </ul>
-        </div>
-    </section>
-
-    <h1 class="page-title">Adding content to your body tag</h1>
-    <div class="snippet-card">
-        <pre class="code-block"><code>&lt;body&gt;
-        &lt;h1 title="That's my name!"&gt;Hi! I'm Sarty!&lt;/h1&gt;
-
-        &lt;img src="images/profile_pic.jfif" alt="Profile Picture" width="200" height="250" style="display: block; margin-left: auto; margin-right: auto; border: 4px solid #342519;" title="That's an avater representation of me!"&gt;
+                <h3>Notes:</h3>
+                <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.8; margin-bottom: 2rem;">
+                    <li>I used the Lora font for the headings and body text.</li>
+                    <li>I used a favicon created by a friend for the tab icon.</li>
+                    <li>My page title changed from my previous website because this is a different project.</li>
+                    <li>The code that you use to import fonts is usually on the Google fonts website.</li>
+                </ul>
+            </div>
+            <!--Body section-->
+            <div>
+                <h2>My &lt;body&gt; Section</h2>
+                <p style="max-width: fit-content; padding-bottom: 20px;">This is the &lt;body&gt; section of my index.html file. It contains the main content of the page, including the header, main content, and footer.</p>
+                <pre class="code-block"><code>
+&lt;body&gt;
+    &lt;h1&gt;Taskie - Welcome&lt;/h1&gt;
+    &lt;p&gt;Welcome to Taskie, the app that will hopefully help you get your life together and actually get things done. ☺&lt;/p&gt;
         
-        &lt;p title="I'm still a student..."&gt;Bachelor of Computer Science | NUST | 2026 - Present | Windhoek, Namibia&lt;/p&gt;
-        &lt;div class="button-container"&gt;
-            &lt;a href="home.html" class="button" target="_self"&gt;More of my portfolio&lt;/a&gt;
-            &lt;a href="documents/CV.pdf" class="button" target="_blank"&gt;Look at my CV&lt;/a&gt;
+    &lt;main class="app-card"&gt;
+            <!--1. Initial choice view-->
+        &lt;selection id="choice-view" class="view-section"&gt;
+            &lt;div class="choice-buttons"&gt;
+                &lt;a href="signup.html" class="btn-primary-link"&gt;I'm new here...&lt;/a&gt;
+                &lt;a href="login.html" class="btn-secondary-link"&gt;I already have an account&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/selection&gt;
+    &lt;/main&gt;
+
+&lt;/body&gt;</code></pre>
+                <h3>Notes:</h3>
+                <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.8; margin-bottom: 2rem;">
+                    <li><code>&lt;h1&gt;</code> is used for the main heading.</li>
+                    <li><code>&lt;main&gt;</code> is used to define the main content area.</li>
+                    <li><code>&lt;selection&gt;</code> is used to create a selection element for the initial choice view. This means it allows the user to select from a list of options.</li>
+                    <li><code>&lt;div&gt;</code> is used to create a container for the choice buttons.</li>
+                    <li><code>&lt;a&gt;</code> is used to create links to the signup and login pages.</li>
+                    <li><code>&lt;class&gt;</code> is used to define the CSS classes for styling.</li>
+                    <li>In this file, we didn't add a link to a JavaScript file, because the functionality is currently handled by the HTML and CSS alone.</li>
+                </ul>
+            </div>
+        </div>
+        <!--Signup.html-->
+        <div>
+            <h1 class="page-title">Signup.html File</h1>
+            <p style="max-width: fit-content; padding-bottom: 20px;">This is the signup.html file for my task manager project. It is the page you see when you click on the "I'm new here..." button on the index.html page.</p>
+            <!--Head section-->
+            <div>
+                <h2>My &lt;head&gt; Section</h2>
+                <p style="max-width: fit-content; padding-bottom: 20px;">Although my &lt;head&gt; section remains the same across all pages, it's important to ensure that each page has the correct meta tags and title.</p>
+                <pre class="code-block"><code>
+&lt;head&gt;
+    &lt;title&gt;Taskie - Sign Up&lt;/title&gt;
+&lt;/head&gt;</code></pre>
+                <h3>Notes:</h3>
+                <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.8; margin-bottom: 2rem;">
+                    <li>The title of the page is changed to "Taskie - Sign Up" to reflect the purpose of this page.</li>
+                    <li>All other meta tags and links remain the same as in the index.html file.</li>
+                </ul>
+            </div>
+            <!--Body section-->
+            <div>
+                <h2>My &lt;body&gt; Section</h2>
+                <p style="max-width: fit-content; padding-bottom: 20px;">This is the &lt;body&gt; section of my signup.html file. It contains the main content of the page, including the header, main content, and footer.</p>
+                <pre class="code-block"><code>
+&lt;body&gt;
+    &lt;h1 style="font-size: 30px;"&gt;Taskie - Sign Up&lt;/h1>
+    &lt;p style="font-size:18px;"&gt;Create a new account to start managing your tasks effectively.&lt;/p&gt;
+
+    &lt;main class="app-card"&gt;
+    <!-- New user registration view -->
+        &lt;a href="index.html" class="back-btn-link" style="padding-top: 0.5px;"&gt;&larr; Back&lt;/a&gt;
+        &lt;h2&gt;New User Registration&lt;/h2&gt;
+        &lt;form id="signup-form"&gt;
+        &lt;div class="input-group"&gt;
+            &lt;label for="signup-name"&gt;What can we call you?&lt;/label&gt;
+                &lt;input type="text" id="signup-name" required placeholder="Type your name here..."&gt;
         &lt;/div&gt;
-        &lt;p style="font-size: 18px;" title="Please contact me..."&gt;Like what you see so far?&lt;/p&gt;
+        &lt;div class="input-group"&gt;
+            &lt;label for="signup-username"&gt;Username:&lt;/label&gt;
+            &lt;input type="text" id="signup-username" name="username" required placeholder="Type your username here..."&gt;
+        &lt;/div&gt;
+        &lt;div class="input-group"&gt;
+            &lt;label for="signup-email"&gt;Email:&lt;/label&gt;
+            &lt;input type="email" id="signup-email" name="email" required placeholder="Type your email here..."&gt;
+        &lt;/div&gt;
+        &lt;div class="input-group"&gt;
+            &lt;label for="signup-password"&gt;Password:&lt;/label&gt;
+                &lt;input type="password" id="signup-password" name="password" required placeholder="Type your password here..."&gt;
+        &lt;/div&gt;
+        <!-- Terms and Conditions -->
+        &lt;div class="terms-group" style="align-items: center;"&gt;
+            &lt;input type="checkbox" id="terms-checkbox" disabled style="align-items: center;">
+            &lt;label for="terms-checkbox" style="align-items: center;">I agree to the &lt;a href="terms.html" id="open-terms-link"&gt;Terms and Conditions&lt;/a&gt;</label>
+        &lt;/div&gt;
+        <!--Secret question-->
+        &lt;div id="podcast-question-group" class="input-group hidden"&gt;
+            &lt;label for="podcast-answer"&gt;What's my favorite podcast?&lt;/label&gt;
+            &lt;input type="text" id="podcast-answer" placeholder="Type the answer here..." required&gt;
+        &lt;/div&gt;
+        &lt;a href="dash.html"&gt;
+            &lt;button type="submit" id="signup-submit-btn" class="btn-primary-link" disabled&gt;Sign Up&lt;/button&gt;
+        &lt;/a&gt;
+    &lt;/form&gt;
+    &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;script type="module" src="signup.js"&gt;&lt;/script&gt;
+&lt;/body&gt;</code></pre>
+                <h3>Notes:</h3>
+                <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.8; margin-bottom: 2rem;">
+                    <li><code>&lt;h2&gt;</code> is used for the main heading, but is often smaller than <code>&lt;h1&gt;</code>.</li>
+                    <li><code>&lt;form&gt;</code> is used to create an HTML form for user input.</li>
+                    <li><code>&lt;id&gt;</code> attributes are used to uniquely identify HTML elements.</li>
+                    <li><code>&lt;label&gt;</code> elements are used to define labels for form controls.</li>
+                    <li><code>&lt;input&gt;</code> elements are used to create interactive controls for web-based forms.</li>
+                    <li><code>&lt;input type=""&gt;</code>defines the kind of input data type.</li>
+                    <li><code>&lt;required placeholder=""&gt;</code> attributes ensure that the field is filled out and provide a hint to the user.</li>
+                    <li><code>&lt;section&gt;</code> is used to group related content, although you can also use other semantic elements like <code>&lt;div&gt;</code>.</li>
+                    <li>In this file, there is a JavaScript file linked to handle form validation and submission.</li>
+                </ul>
+            </div>
+        </div>
         
-        &lt;address style="font-size: 18px;" title="That's my email address!"&gt;
-            Email me at &lt;a href="mailto:sartyndafy@gmail.com" style="color: #342519;"&gt;sartyndafy@gmail.com&lt;/a&gt;
-        &lt;/address>
-    &lt;/body&gt;</code></pre>
-    </div>
-
-    <section class="code-notes-section">
-        <h2 class="notes-heading">Breakdown & Notes</h2>
-    
-        <div style="margin-bottom: 1.2rem;">
-            <h3 style="font-size: 1.2rem; margin-bottom: 0.4rem; color: #45171b;">The Core Element: <code style="color: #2d4a3e;">&lt;body&gt;</code></h3>
-            <p style="font-size: 1.1rem; line-height: 1.5;">Contains all the visible content of an HTML document, such as headings, paragraphs, images, hyperlinks, and tables.</p>
-            <ul class="notes-list">
-                <li><code style="color: #2d4a3e;">&lt;h1&gt;</code>: Defines the most important heading on the page.</li>
-                <li><code style="color: #2d4a3e;">&lt;img&gt;</code>: Embeds an image into the page (an empty element with no closing tag).</li>
-                <li><code style="color: #2d4a3e;">&lt;p&gt;</code>: Defines a standard text paragraph.</li>
-                <li><code style="color: #2d4a3e;">&lt;address&gt;</code>: Indicates that the enclosed HTML provides contact information for a person or organization.</li>
-                <li><code style="color: #2d4a3e;">title</code>: Adds a tooltip text description that appears when a user hovers over the element.</li>
-                <li><code style="color: #2d4a3e;">src</code>: Specifies the file path or URL for an image.</li>
-                <li><code style="color: #2d4a3e;">alt</code>: Provides alternative text for an image if it fails to load or for screen readers.</li>
-                <li><code style="color: #2d4a3e;">target</code>: Specifies where to open a linked document (e.g., <code style="color: #2d4a3e;">_blank</code> opens it in a new tab).
-                <li><code style="color: #2d4a3e;">&lt;img ... style="display: block; margin-left: auto; margin-right: auto;"&gt;</code> centers the image horizontally on the page using inline CSS.</li>
-                <li><code style="color: #2d4a3e;">&lt;a href="mailto:..."&gt;</code> creates an active email link that automatically opens the user's default email client when clicked.</li>
-                <li><code style="color: #2d4a3e;">&lt;div&gt;</code>: A generic, block-level container used to group visible elements together (like buttons) for easier layout and styling without adding any visual effect of its own.</li>
-                <li><code style="color: #2d4a3e;">class</code>: An attribute used to assign a name to an element, acting as a hook for CSS stylesheets to target and style groups of items consistently.</li>
-                <li><code style="color: #2d4a3e;">title</code>: An attribute that provides extra information, displayed by the browser as an interactive tooltip when the user hovers over the element in the body. You can see title of the text when you hover over it.</li>
-                <li><code style="color: #2d4a3e;">style</code>: An attribute used to apply CSS rules directly (inline) to a specific element on the page, such as adding borders or adjusting margins on the fly.</li>
-            </ul>
-        </div>
-    </section>
-
-    <h1 class="page-title">Some navigation buttons</h1>
-
-    <div class="snippet-card">
-        <pre class="code-block"><code>&lt;button class="menu-button" onclick="toggleMenu()" aria-label="Navigation"&gt;
-    &lt;span&gt;&lt;/span&gt;
-    &lt;span&gt;&lt;/span&gt;
-    &lt;span&gt;&lt;/span&gt;
-&lt;/button&gt;
-&lt;aside class="sidebar" id="sidebar"&gt;
-    &lt;nav&gt;
-        &lt;a href="index.html" class="button"&gt;Landing Page&lt;/a&gt;
-        &lt;a href="home.html" class="button"&gt;Selection Page&lt;/a&gt;
-        &lt;a href="myskills.html" class="button"&gt;Skills&lt;/a&gt;
-        &lt;a href="projects.html" class="button"&gt;Projects&lt;/a&gt;
-        &lt;a href="experience.html" class="button"&gt;Experience&lt;/a&gt;
-        &lt;a href="documents/CV.pdf" target="_blank" class="button"&gt;CV&lt;/a&gt;
-    &lt;/nav&gt;
-&lt;/aside&gt;</code></pre>
-    </div>
-
-    <section class="code-notes-section">
-        <h2 class="notes-heading">Breakdown & Notes</h2>
-    
-        <div style="margin-bottom: 1.2rem;">
-            <h3 style="font-size: 1.2rem; margin-bottom: 0.4rem; color: #45171b;">The Core Elements</h3>
-            <ul class="notes-list">
-                <li><code style="color: #2d4a3e;">&lt;button&gt;</code>: Creates a clickable button element that can trigger actions or events.</li>
-                <li><code style="color: #2d4a3e;">class</code>: Assigns a name to the button for CSS styling and JavaScript targeting.</li>
-                <li><code style="color: #2d4a3e;">onclick</code>: An event attribute that specifies a JavaScript function to run when the button is clicked.</li>
-                <li><code style="color: #2d4a3e;">aria-label</code>: Provides an accessible label for screen readers, describing the button's purpose.</li>
-                <li><code style="color: #2d4a3e;">&lt;span&gt;</code>: A generic inline container used to group elements for styling or scripting purposes.</li>
-                <li><code style="color: #2d4a3e;">&lt;aside&gt;</code>: Represents content that is tangentially related to the main content, often used for sidebars or navigation menus.</li>
-                <li><code style="color: #2d4a3e;">id</code>: Assigns a unique identifier to the aside element for CSS styling and JavaScript targeting.</li>
-                <li><code style="color: #2d4a3e;">&lt;nav&gt;</code>: Defines a section of navigation links, typically used for menus or site navigation.</li>
-                <li><code style="color: #2d4a3e;">&lt;a&gt;</code>: Creates a hyperlink to another page or resource, with attributes like href and target to specify the link destination and behavior.</li>
-            </ul>
-        </div>
-    </section>
-
-    <div class="snippet-card">
-        <pre class="code-block"><code>&lt;div class="page-content" id="pageContent"&gt;
-    &lt;h1&gt;Short Story...&lt;/h1&gt;
-
-    &lt;p title="What am I doing now?"&gt;Hi, I'm Sarty! I'm a passionate computer science student at NUST, currently pursuing my Bachelor's degree. I have a strong interest in software development and creative problem-solving.&lt;/p&gt;
-    &lt;p title="What do I mean by creative problem solving?"&gt;I enjoy tackling complex challenges and finding innovative solutions. I believe that creativity is a key aspect of programming, allowing me to approach problems from different angles and develop efficient and fun solutions.&lt;/p&gt;
-    &lt;p title="Some skills I would like to spotlight."&gt;Through my projects, studies and competition at NUST, I've been developing my skills in programming, web development, software design and creative problem-solving focused on the user's needs.&lt;/p&gt;
-    &lt;p title="My interests?"&gt;Outside of coding, I am passionate about fashion, music and anything that involves creativity. I enjoy sewing, experimenting with new ideas and hobbies, and finding ways to combine my creativity and technical skills.&lt;/p&gt;
-    &lt;p title="What do I want to do in the future?"&gt;In the future, I aspire to work on exciting projects that challenge me and allow me to make a positive impact. I am eager to continue learning and growing as a developer, and I look forward to collaborating with like-minded individuals who share my passion for technology and creativity.&lt;/p&gt;
-    &lt;hr&gt;
-    &lt;p style="font-size: 18px; text-align: center;" title="Please contact me..."&gt;Like what you see so far?&lt;/p&gt;
-    &lt;address style="font-size: 18px;" title="That's my email address!"&gt;Email me at &lt;a href="mailto:sartyndafy@gmail.com" style="color: #342519;"&gt;sartyndafy@gmail.com&lt;/a&gt;
-    &lt;/address&gt;
-&lt;/div&gt;</code></pre>
-    </div>
-
-    <section class="code-notes-section">
-        <h2 class="notes-heading">Breakdown & Notes</h2>
-        <ul style="list-style-type: circle; padding-left: 1.2rem; margin-top: 0.4rem;">
-            <li><code style="color: #2d4a3e;">&lt;address&gt;</code>: A semantic HTML element used specifically to enclose contact information for the author or owner of a document or article. Browsers typically italicize this text by default.</li>
-            <li><code style="color: #2d4a3e;">&lt;a href="mailto:..."&gt;</code>: Creates an interactive email link. Clicking it automatically opens the user's default email app with the address pre-filled.</li>
-            <li><code style="color: #2d4a3e;">title="..."</code>: Displays advisory tooltip text when a user hovers their mouse pointer over the paragraph or address element.</li>
-            <li><code style="color: #2d4a3e;">text-align: center;</code>: Centers the text horizontally within its container (used on the closing paragraph).</li>
-            <li><code style="color: #2d4a3e;">style="color: #342519;"</code>: Overrides the browser's default blue hyperlink color to match your custom dark brown/burgundy palette.</li>
-        </ul>
-    </section>
-
-    <address style="font-size: 18px;" title="That's my email address!">Email me at <a href="mailto:sartyndafy@gmail.com" style="color: #45171b;" class="regular-links">sartyndafy@gmail.com</a> if you experience any issues.</address>
+        
+        <address style="font-size: 18px; padding-top: 40px;" title="That's my email address!">Email me at <a href="mailto:sartyndafy@gmail.com" style="color: #45171b;" class="regular-links">sartyndafy@gmail.com</a> if you experience any issues.</address>
     </main>
     <script src="script.js"></script>
 </body>
